@@ -23,7 +23,7 @@ PPhlF	PHlYllR END
 <Ext-NorGates>
 In1	In2	Out
 PTac	PTet	PSrpR END 
-PTac	PTet	PAmer END 
+PTac	PTet	PAmeR END 
 PTac	PTet	PHlYllR END 
 PTac	PTet	PPhlF END 
 PTac	PTet	PBetl END 

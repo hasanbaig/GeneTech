@@ -189,7 +189,7 @@ class SBOLv:
 			ax_dna.set_yticks([])
 			ax_dna.axis('off')
 
-			fig.savefig('SBOL_visual_'+str(i+1)+'.png', dpi=300)
+			fig.savefig('SBOL visual '+str(i+1)+'.png', dpi=300)
 			plt.close('all')
 
 if __name__ == '__main__':

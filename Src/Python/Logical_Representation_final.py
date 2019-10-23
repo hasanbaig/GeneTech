@@ -45,6 +45,7 @@ class Logical_Representation:
                                 if k==0: #for first gate (to make text at the start of line)
                                     G1 = d.add(e.LINE, d='right', toplabel=gate[0])
                                     xx = d.add(e.LINE, d='right',l=0.5)
+                                    delay =
                                     NOT = d.add(l.NOT, zoom=1, endpts=[xx.end,[xx.end[0]+3,xx.end[1]]], botlabel=gate[1], fill=col_map[color])
                                     color += 1
                                 else:

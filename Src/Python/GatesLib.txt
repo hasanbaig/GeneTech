@@ -23,7 +23,7 @@ PPhlF	PHlYllR END 	0.1
 <Ext-NorGates>
 In1	In2	Out		Time
 PTac	PTet	PSrpR END 	0.5
-PTac	PTet	PAmer END 	0.3
+PTac	PTet	PAmeR END 	0.3
 PTac	PTet	PHlYllR END 	0.5
 PTac	PTet	PPhlF END 	0.6
 PTac	PTet	PBetl END 	0.3
