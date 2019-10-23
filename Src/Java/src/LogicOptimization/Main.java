@@ -18,6 +18,7 @@ public class Main
 	public static FileWriter fw; 
 	public static void main (String [] args) throws Exception
 	{
+		//Creates a GatewayServer instance with default port (25333), default address (127.0.0.1), and default timeout value (no timeout).
 		GatewayServer gatewayServer = new GatewayServer(new Main());
         gatewayServer.start();
         System.out.println("Gateway Server Started");

@@ -1,0 +1,64 @@
+<Ext-Inverters>
+Ext-Input 	In	Out		Time
+a'	PTac	PAmtR END 	0.2
+a'	PTac	PHlYllR END 	0.3
+a'	PTac	PSrpR END 	0.1
+a'	PTac	PPhlF END 	0.4
+b'	PTet	PAmeR END 	0.1
+b'	PTet	PAmtR END 	0.3
+c'	PBad	PAmtR END 	0.2
+c'	PBad	PSrpR END 	0.1
+c'	PBad	PBM3R1 END 	0.4
+</Ext-Inverters>
+<Int-Inverters>
+PBM3R1	PSrpR END 	0.3
+PBetl	PHlYllR END 	0.4
+PPhlF	PAmtR END 	0.2
+PBM3R1	PAmtR END 	0.1
+PSrpR	PAmtR END 	0.4
+PPhlF	PBM3R1 END 	0.5
+PHlYllR	PBetl END 	0.2
+PPhlF	PHlYllR END 	0.1
+</Int-Inverters>
+<Ext-NorGates>
+In1	In2	Out		Time
+PTac	PTet	PSrpR END 	0.5
+PTac	PTet	PAmer END 	0.3
+PTac	PTet	PHlYllR END 	0.5
+PTac	PTet	PPhlF END 	0.6
+PTac	PTet	PBetl END 	0.3
+PBad	PTet	PHlYllR END 	0.1
+PBad	PTet	PSrpR END 	0.3
+PBad	PTet	PBM3R1 END 	0.2
+</Ext-NorGates>
+<Semi-Ext-NorGates>
+PTac	PAmeR	PBetl END 	0.2
+PTac	PAmtR	PHlYllR END 	0.3
+PTac	PAmtR	PPhlF END 	0.4
+PTac	PBetl	PPhlF END 	0.3
+PTac	PHlYllR	PPhlF END 	0.2
+PTet	PHlYllR	PBetl END 	0.2
+PTet	PSrpR	PPhlF END 	0.3
+PTet	PPhlF	PSrpR END 	0.1
+PTet	PBM3R1	PSrpR END 	0.2
+PTet	PAmtR	PBetl END 	0.2
+PTet	PPhlF	PHlYllR END 	0.3
+PTet	PHlYllR	PBM3R1 END 	0.1
+PBad	PHlYllR	PBM3R1 END 	0.4
+PBad	PHlYllR	PAmtR END 	0.6
+PBad	PAmtR	PPhlF END 	0.8
+PBad	PHlYllR	PSrpR END 	0.2
+</Semi-Ext-NorGates>
+<Int-NorGates>
+PSrpR	PAmtR	PPhlF END 	0.1
+PHlYllR	PAmeR	PBetl END 	0.05
+PSrpR	PBetl	PPhlF END 	0.1
+PPhlF	PHlYllR	PBM3R1 END 	0.2
+PAmtR	PAmeR	PBetl END 	0.3
+PBetl	PHlYllR	PPhlF END 	0.5
+PPhlF	PAmtR	PBetl END 	0.3
+PSrpR	PHlYllR	PBM3R1 END 	0.2
+PSrpR	PHlYllR	PPhlF END 	0.1
+PPhlF	PAmtR	PHlYllR END 	0.5
+PAmtR	PHlYllR	PBetl END 	0.6
+</Int-NorGates>
