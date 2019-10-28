@@ -6,16 +6,15 @@ import Logical_Representation_final as l
 import SBOL_visual as v
 
 class Gateway:
-    def __init__(self, inputString):
-        self.run_java()
+    def __init__(self, inputString, total_gates=1000, total_time=1000):
         gateway = JavaGateway() #A JavaGateway instance is connected to a Gateway instance on the Java side
         myclass = gateway.entry_point #JavaGateway instance is connected to the Gateway.entryPoint instance on the Java side.
         Circuit = myclass.function(inputString) #Call a function from the instance on Java side
         os.system("taskkill /im javaw.exe /f") #close the JavaGateway instance so it would be ready to connect next time
 
-        f=s.SBOL_File() #create SBOl files
-        l.Logical_Representation() #Create Logical Representation images
-        v.SBOLv()   #create SBOL visual Representation images
+        f=s.SBOL_File(total_gates, total_time) #create SBOl files
+        l.Logical_Representation(total_gates, total_time) #Create Logical Representation images
+        v.SBOLv(total_gates, total_time)   #create SBOL visual Representation images
 
     def run_java(self):
         current = os.getcwd() #get current path
@@ -25,4 +24,4 @@ if __name__ == '__main__':
     #inputExp = "IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'"
     #inputExp = "a.b.c'+a'.b.c'+a.b'.c'"
     inputExp = "IPTG'.aTc.Arabinose'+IPTG'.aTc.Arabinose+IPTG.aTc.Arabinose'"
-    c = Gateway(inputExp)
+    c = Gateway(inputExp, 5)

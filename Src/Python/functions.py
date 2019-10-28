@@ -128,8 +128,74 @@ def GatherGates():
 
     return [Ext_NOTs, Int_NOTs, Ext_NORs, SemiExt_NORs, Int_NORs]
 
+def Total_time(i):
+    time = 0
+    circuits = ReadFile()
+    line_time = []
+    for j in range(len(circuits[i])-1, -1, -1):
+        if j!= 0:
+            t = 0
+            endbracket=len(circuits[i][j])-circuits[i][j][-1::-1].index(")")
+            All_gates=circuits[i][j][:endbracket].split(' ----|')
+            for k in range(len(All_gates)):
+                gate = All_gates[k].split('-> ')
+                if len(gate)==2:
+                    t += float(Delay(gate[0], gate[1]))
+                elif len(gate)==3:
+                    if gate[1] not in baseList():
+                        if gate[1] == 'P'+line_time[0][1]:
+                            if t < line_time[0][0]:
+                                t = line_time[0][0]
+                                line_time.pop(0)
+                            else:
+                                line_time.pop(0)
+                    t += float(Delay(gate[0], gate[2], gate[1]))
+                if k == len(All_gates)-1:
+                    line_time.append((t, gate[-1][1:-1]))
+
+        else:
+            All_gates=circuits[i][0].split(' ----|')
+            FP = All_gates[-1].split('-> ')[-1]  #YFP for our case right now
+            for k in range(len(All_gates)):
+                gate = All_gates[k].split('-> ')
+                if FP not in gate[-1]:
+                    if len(gate) == 2:
+                        time += float(Delay(gate[0], gate[1]))
+                    elif len(gate)==3:
+                        if gate[1] not in baseList():
+                            if gate[1] == 'P'+line_time[0][1]:
+                                if time < line_time[0][0]:
+                                    time = line_time[0][0]
+                                    line_time.pop(0)
+                                else:
+                                    line_time.pop(0)
+                        time += float(Delay(gate[0], gate[2], gate[1]))
+
+                else:
+                    if len(gate)==3:
+                        if gate[1] not in baseList():
+                            if gate[1] == 'P'+line_time[0][1]:
+                                if time > line_time[0][0]:
+                                    time = line_time[0][0]
+                                    line_time.pop(0)
+                                else:
+                                    line_time.pop(0)
 
 
+    return round(time, 5)
 
-print(Delay('PTet', '(AmeR)', 'PTac'))
+print(Total_time(0))
 
+def Total_Gates(i):
+    gates = 0
+    circuits = ReadFile()
+    for j in range(len(circuits[i])):
+        if j==0:
+            All_gates=circuits[i][0].split(' ----|')
+            gates += len(All_gates)-1
+        else:
+            endbracket=len(circuits[i][j])-circuits[i][j][-1::-1].index(")")
+            All_gates=circuits[i][j][:endbracket].split(' ----|')
+            gates += len(All_gates)
+
+    return gates
