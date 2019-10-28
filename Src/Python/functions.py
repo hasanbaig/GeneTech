@@ -29,6 +29,11 @@ def DeleteExistingFiles():
     for i in range(len(list)):
         os.remove(list[i])
 
+def CountFiles():
+    """Counts all the existing SBOL files in the directory"""
+    list = glob.glob('**/*.xml', recursive=True)
+    return len(list)
+
 def ReadFile():
     """Read the file and create a list with lines of circuits in it"""
     f = open("circuits.txt")
