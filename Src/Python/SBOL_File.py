@@ -25,6 +25,7 @@ class SBOL_File:
         return Component_strings
 
     def CreateFile(self, input_list, circuits, total_gates, total_time):
+        file_num = 1
         for i in range(circuits): #iter for each circuit
             if Total_Gates(i) <= total_gates and Total_time(i) <= total_time:   #If Total Delay and number of gates are less than the input
                 setHomespace('http://sbols.org/Output_Circuit'+str(i)) #sets the default URI prefix for every object
@@ -262,7 +263,8 @@ class SBOL_File:
                                 P_map.remote = Components[1][index_of_myP].identity
 
 
-                result = doc.write("Output_Circuit_" + str(i+1) +".xml")        #To save the SBOL File
+                result = doc.write("Output_Circuit_" + str(file_num) +".xml")        #To save the SBOL File
+                file_num += 1
 
 if __name__ == '__main__':
     inputExp = "IPTG'.aTc'.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'"

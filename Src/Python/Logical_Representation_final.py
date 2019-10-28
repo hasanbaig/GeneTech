@@ -25,7 +25,8 @@ class Logical_Representation:
         col_map[6] = '#9918c4'	#indigo
         col_map[7] = '#e6178f'	#violet
         col_map[8] = '#995f81'	#purple
-        
+
+        file_num = 1
         for i in range(len(circuits)):
             if Total_Gates(i) <= total_gates and Total_time(i) <= total_time:       #If Total Delay and number of gates are less than the input
                 d = schem.Drawing(unit=.25, fontsize=7)         #All the elements will be added to this variable
@@ -182,8 +183,8 @@ class Logical_Representation:
                         d.add(e.LINE, xy=G4.end, d='up', endpts=[[use[z][1].end[0],G4.start[1]],use[z][1].end])
 
                 d.draw(showplot=False)
-                d.save('Circuit'+str(i+1)+'.png', dpi=300)
-
+                d.save('Circuit'+str(file_num)+'.png', dpi=300)
+                file_num += 1
 
 if __name__ == '__main__':
     logic = Logical_Representation(1000, 1000)

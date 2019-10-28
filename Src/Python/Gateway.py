@@ -24,4 +24,4 @@ if __name__ == '__main__':
     #inputExp = "IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'"
     #inputExp = "a.b.c'+a'.b.c'+a.b'.c'"
     inputExp = "IPTG'.aTc.Arabinose'+IPTG'.aTc.Arabinose+IPTG.aTc.Arabinose'"
-    c = Gateway(inputExp, 5)
+    c = Gateway(inputExp, 5, 5)

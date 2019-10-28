@@ -22,6 +22,7 @@ class SBOLv:
 		col_map[8] = '#995f81'	#purple
 
 		for i in range(len(circuits)):
+			file_num = 1
 			if Total_Gates(i) <= total_gates and Total_time(i) <= total_time:		#If Total Delay and number of gates are less than the input
 				fig = plt.figure()
 				design = []			#A list to be gathered to draw
@@ -192,6 +193,7 @@ class SBOLv:
 
 				fig.savefig('SBOL visual '+str(i+1)+'.png', dpi=300)
 				plt.close('all')
+				file_num += 1
 
 if __name__ == '__main__':
     visual = SBOLv(1000, 1000)
