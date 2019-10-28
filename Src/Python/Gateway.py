@@ -6,7 +6,7 @@ import Logical_Representation_final as l
 import SBOL_visual as v
 
 class Gateway:
-    def __init__(self, inputString, total_gates=1000, total_time=1000):
+    def __init__(self, inputString, total_gates=10000, total_time=10000):
         self.run_java()
         gateway = JavaGateway() #A JavaGateway instance is connected to a Gateway instance on the Java side
         myclass = gateway.entry_point #JavaGateway instance is connected to the Gateway.entryPoint instance on the Java side.
@@ -22,7 +22,7 @@ class Gateway:
         os.system(r'"'+current+'\exe\GeneTechJava.exe"') #run .exe file
 
 if __name__ == '__main__':
-    #inputExp = "IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'"
+    inputExp = "IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'"
     #inputExp = "a.b.c'+a'.b.c'+a.b'.c'"
-    inputExp = "IPTG'.aTc.Arabinose'+IPTG'.aTc.Arabinose+IPTG.aTc.Arabinose'"
-    c = Gateway(inputExp)
+    #inputExp = "IPTG'.aTc.Arabinose'+IPTG'.aTc.Arabinose+IPTG.aTc.Arabinose'"
+    c = Gateway(inputExp, 1000, 1000)

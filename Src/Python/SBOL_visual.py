@@ -21,8 +21,8 @@ class SBOLv:
 		col_map[7] = '#e6178f'	#violet
 		col_map[8] = '#995f81'	#purple
 
+		file_num = 1
 		for i in range(len(circuits)):
-			file_num = 1
 			if Total_Gates(i) <= total_gates and Total_time(i) <= total_time:		#If Total Delay and number of gates are less than the input
 				fig = plt.figure()
 				design = []			#A list to be gathered to draw
@@ -191,7 +191,7 @@ class SBOLv:
 				ax_dna.set_yticks([])
 				ax_dna.axis('off')
 
-				fig.savefig('SBOL visual '+str(i+1)+'.png', dpi=300)
+				fig.savefig('SBOL visual '+str(file_num)+'.png', dpi=300)
 				plt.close('all')
 				file_num += 1
 
