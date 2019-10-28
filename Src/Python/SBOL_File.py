@@ -83,10 +83,10 @@ class SBOL_File:
                     componentDef_string.append(name_line)
 
                 #For the Flourescent Protein, which is the last element of the first line of the circuit
-                FP_protein = ComponentDefinition(componentDef_string[i][-2][1:-1]+'_Protein', BIOPAX_PROTEIN)
+                FP_protein = ComponentDefinition(componentDef_string[0][-2][1:-1]+'_Protein', BIOPAX_PROTEIN)
                 doc.addComponentDefinition(FP_protein)
 
-                FP_protein_c = Device.components.create(componentDef_string[i][-2][1:-1]+'_Protein')
+                FP_protein_c = Device.components.create(componentDef_string[0][-2][1:-1]+'_Protein')
                 FP_protein_c.definition = FP_protein.identity
                 FP_protein_c.access = SBOL_ACCESS_PUBLIC
 
@@ -128,7 +128,7 @@ class SBOL_File:
                             cds_fc.access = SBOL_ACCESS_PUBLIC
                             cds_fc.direction = SBOL_DIRECTION_NONE
 
-                            if componentDef_string[j][k] != componentDef_string[i][-2]:     #If the component is not the flourescent protein
+                            if componentDef_string[j][k] != componentDef_string[0][-2]:     #If the component is not the flourescent protein
                                 #Create Functional Component of the output promotor
                                 P_fc = Circuit.functionalComponents.create(componentDef_string[j][k+2])
                                 P_fc.definition = component_defs[j][k+2].identity
@@ -159,19 +159,19 @@ class SBOL_File:
                                 P_map.remote = Components[j][k+2].identity
 
                             else:       #If its Flourescent Protein
-                                FP_fc = Circuit.functionalComponents.create(componentDef_string[i][-2][1:-1]+'_Protein')
+                                FP_fc = Circuit.functionalComponents.create(componentDef_string[0][-2][1:-1]+'_Protein')
                                 FP_fc.definition = FP_protein.identity
                                 FP_fc.access = SBOL_ACCESS_PUBLIC
                                 FP_fc.direction = SBOL_DIRECTION_NONE
 
-                                Production= Circuit.interactions.create(componentDef_string[i][0][-2][1:-1]+'_produces_'+componentDef_string[i][0][-2][1:-1]+'_Protein')
+                                Production= Circuit.interactions.create(componentDef_string[0][-2][1:-1]+'_produces_'+componentDef_string[0][-2][1:-1]+'_Protein')
                                 Production.types = SBO_GENETIC_PRODUCTION
 
                                 cds_participation = Production.participations.create(componentDef_string[j][k][1:-1])
                                 cds_participation.roles = SBO + '0000645'       #The role for the coding sequence of the flourescent protein is not defined
                                 cds_participation.participant = cds_fc.identity
 
-                                FP_participation = Production.participations.create(componentDef_string[i][0][-2][1:-1]+'_Protein')
+                                FP_participation = Production.participations.create(componentDef_string[0][-2][1:-1]+'_Protein')
                                 FP_participation.roles = SBO_PRODUCT
                                 FP_participation.participant = FP_fc.identity
 
@@ -180,7 +180,7 @@ class SBOL_File:
                                 cds_map.local = cds_fc.identity
                                 cds_map.remote = Components[j][k].identity
 
-                                FP_map = Circuit_fc.mapsTos.create(componentDef_string[i][0][-2][1:-1]+'_Protein_map')
+                                FP_map = Circuit_fc.mapsTos.create(componentDef_string[0][-2][1:-1]+'_Protein_map')
                                 FP_map.refinement = SBOL_REFINEMENT_USE_REMOTE
                                 FP_map.local = FP_fc.identity
                                 FP_map.remote = FP_protein_c.identity
