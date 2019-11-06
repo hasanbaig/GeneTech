@@ -2,11 +2,11 @@ from py4j.java_gateway import *
 import os
 import subprocess
 import SBOL_File as s
-import Logical_Representation_final as l
+import Logical_Representation as l
 import SBOL_visual as v
 
 class Gateway:
-    def __init__(self, inputString, total_gates=10000, total_time=10000):
+    def __init__(self, inputString, total_gates, total_time):
         self.run_java()
         gateway = JavaGateway() #A JavaGateway instance is connected to a Gateway instance on the Java side
         myclass = gateway.entry_point #JavaGateway instance is connected to the Gateway.entryPoint instance on the Java side.

@@ -5,10 +5,10 @@ class SBOL_File:
     def __init__(self, total_gates, total_time):
         DeleteExistingFiles()
         circuits = ReadFile()
-        Component_strings = self.ListOfComponents(circuits)
+        Component_strings = self.ListOfLines(circuits)
         self.CreateFile(Component_strings, len(Component_strings), total_gates, total_time)
 
-    def ListOfComponents(self, circuits):
+    def ListOfLines(self, circuits):
         #This function filters out the unwanted characters from every line of each circuit
         chac = '->|^'
         Component_strings = []

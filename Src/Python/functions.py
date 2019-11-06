@@ -143,6 +143,7 @@ def GatherGates():
     return [Ext_NOTs, Int_NOTs, Ext_NORs, SemiExt_NORs, Int_NORs]
 
 def Total_time(i):
+    """Calculates the total time of the circuit"""
     time = 0
     circuits = ReadFile()
     line_time = []
