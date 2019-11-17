@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 from functions import *
 
 class Logical_Representation:
-    def __init__(self, total_gates, total_time):
+    def __init__(self, total_gates, total_time, option, num):
         DeleteExistingImages()
         circuits = ReadFile()
-        self.plot(circuits, total_gates, total_time)
+        self.plot(circuits, total_gates, total_time, option, num)
 
-    def plot(self, circuits, total_gates, total_time):
+    def plot(self, circuits, total_gates, total_time, option, num):
         # Colour map
         col_map = {}
         col_map[0] = '#e31414'	#red
@@ -26,9 +26,9 @@ class Logical_Representation:
         col_map[7] = '#e6178f'	#violet
         col_map[8] = '#995f81'	#purple
 
-        file_num = 1
         for i in range(len(circuits)):
-            if Total_Gates(i) <= total_gates and Total_time(i) <= total_time:       #If Total Delay and number of gates are less than the input
+            file_num = SortNum(i, option) + 1
+            if Total_Gates(i) <= total_gates and Total_time(i) <= total_time and file_num <= num:       #If Total Delay and number of gates are less than the input
                 d = schem.Drawing(unit=.25, fontsize=7)         #All the elements will be added to this variable
                 G1 = 0          #The variable for gates in first line (it's a reference variable to add all the gates to it)
                 G4 = G1         #This is the variable for the gates in the lines other than the first one
@@ -184,7 +184,6 @@ class Logical_Representation:
 
                 d.draw(showplot=False)
                 d.save('Circuit'+str(file_num)+'.png', dpi=300)
-                file_num += 1
 
 if __name__ == '__main__':
     logic = Logical_Representation(1000, 1000)

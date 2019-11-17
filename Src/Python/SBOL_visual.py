@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 from functions import *
 
 class SBOLv:
-	def __init__(self, total_gates, total_time):
+	def __init__(self, total_gates, total_time, option, num):
 		circuits = ReadFile()
-		self.plot(circuits, total_gates, total_time)
+		self.plot(circuits, total_gates, total_time, option, num)
 
-	def plot(self, circuits, total_gates, total_time):
+	def plot(self, circuits, total_gates, total_time, option, num):
 		# Colour map
 		col_map = {}
 		col_map[0] = '#e31414'	#red
@@ -21,9 +21,9 @@ class SBOLv:
 		col_map[7] = '#e6178f'	#violet
 		col_map[8] = '#995f81'	#purple
 
-		file_num = 1
 		for i in range(len(circuits)):
-			if Total_Gates(i) <= total_gates and Total_time(i) <= total_time:		#If Total Delay and number of gates are less than the input
+			file_num = SortNum(i, option) + 1
+			if Total_Gates(i) <= total_gates and Total_time(i) <= total_time and file_num <= num:		#If Total Delay and number of gates are less than the input
 				fig = plt.figure()
 				design = []			#A list to be gathered to draw
 				reg = []			#To store the Repression Lines
@@ -193,7 +193,6 @@ class SBOLv:
 
 				fig.savefig('SBOL visual '+str(file_num)+'.png', dpi=300)
 				plt.close('all')
-				file_num += 1
 
 if __name__ == '__main__':
     visual = SBOLv(1000, 1000)

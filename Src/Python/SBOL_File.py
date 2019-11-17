@@ -2,11 +2,11 @@ from sbol import *
 from functions import *
 
 class SBOL_File:
-    def __init__(self, total_gates, total_time):
+    def __init__(self, total_gates, total_time, option, num):
         DeleteExistingFiles()
         circuits = ReadFile()
         Component_strings = self.ListOfLines(circuits)
-        self.CreateFile(Component_strings, len(Component_strings), total_gates, total_time)
+        self.CreateFile(Component_strings, len(Component_strings), total_gates, total_time, option, num)
 
     def ListOfLines(self, circuits):
         #This function filters out the unwanted characters from every line of each circuit
@@ -24,10 +24,10 @@ class SBOL_File:
 
         return Component_strings
 
-    def CreateFile(self, input_list, circuits, total_gates, total_time):
-        file_num = 1
+    def CreateFile(self, input_list, circuits, total_gates, total_time, option, num):
         for i in range(circuits): #iter for each circuit
-            if Total_Gates(i) <= total_gates and Total_time(i) <= total_time:   #If Total Delay and number of gates are less than the input
+            file_num = SortNum(i, option) + 1
+            if Total_Gates(i) <= total_gates and Total_time(i) <= total_time and file_num <= num:   #If Total Delay and number of gates are less than the input
                 setHomespace('http://sbols.org/Output_Circuit'+str(i)) #sets the default URI prefix for every object
                 #To avoid collision in objects, as we don't want to use the same Id in different type of objects
                 Config.setOption('sbol_typed_uris', False)
@@ -262,9 +262,7 @@ class SBOL_File:
                                 P_map.local = P_fc.identity
                                 P_map.remote = Components[1][index_of_myP].identity
 
-
                 result = doc.write("Output_Circuit_" + str(file_num) +".xml")        #To save the SBOL File
-                file_num += 1
 
 if __name__ == '__main__':
     inputExp = "IPTG'.aTc'.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'"

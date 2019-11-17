@@ -213,3 +213,181 @@ def Total_Gates(i):
             gates += len(All_gates)
 
     return gates
+
+def SortNum(index, option):
+    """Determine the sort index of the circuit after sorting all the circuits according to a constraint"""
+    circuits = ReadFile()
+    list = []
+    for i in range(len(circuits)):
+        if option == 0:
+            factor = Total_time(i)
+        else:
+            factor = Total_Gates(i)
+
+        list.append([i, factor])
+
+    list = sorted(list, key = func)
+
+    d={}
+    for i in range(len(list)):
+        d[list[i][0]] = list[i]
+        d[list[i][0]][0] = i
+
+    return d[index][0]
+
+def func(x):
+    return x[1]
+
+def count_no_alphabets(POS):
+    """Function to calculate no. of variables used in POS expression"""
+    i = 0
+    no_var = 0
+    # As expression is standard so total no.of alphabets will be equal to alphabets before first '.' character
+    while (POS[i]!='.'):
+        # checking if character is alphabet
+        if (POS[i].isalpha()):
+            no_var+= 1
+        i+= 1
+    return no_var
+
+def Cal_Max_terms(POS):
+    """Function to calculate the max terms in integers"""
+    Max_terms = []
+    a = ""
+    i = 0
+    while (i<len(POS)):
+        if (POS[i]=='.'):
+            b = int(a, 2)            # converting binary to decimal
+            Max_terms.append(b)      # insertion of each min term(integer) into the list
+            a =""                    # empty the string
+            i+= 1
+
+        elif(POS[i].isalpha()):
+            # checking whether variable is complemented or not
+            if(i+1 != len(POS) and POS[i+1]=="'"):
+                a += '1'        # concatenating the string with '1'. In POS, complement means '1'
+                i += 2          # incrementing by 2 because 1 for alphabet and another for "'"
+            else:
+                a += '0'        # concatenating the string with '0'. In POS, complement means '0'
+                i += 1
+        else:
+            i+= 1
+
+    # insertion of last min term(integer) into the list
+    Max_terms.append(int(a, 2))
+    return Max_terms
+
+def Cal_Min_terms(Max_terms, no_var):
+    """Function to calculate the min terms in binary then calculate SOP form of POS"""
+    Min_terms =[]       # declaration of the list
+    max = 2**no_var     # calculation of total no. of terms that can be formed by no_var variables (for 3 variables 8 outcomes)
+    for i in range(0, max):
+        # checking whether the term is not present in the max terms
+        if (Max_terms.count(i)== 0):
+            # converting integer to binary and then taking the value from 2nd index as 1st two index contains '0b'
+            b = bin(i)[2:]
+            # loop used for inserting 0's before the binary value so that its length will be
+            # equal to no. of variables present in each product term
+            while(len(b)!= no_var):
+                b ='0'+b
+
+            # appending the max terms(integer) in the list
+            Min_terms.append(b)
+
+    SOP = ""
+
+    # loop till there are min terms
+    for i in Min_terms:
+        value = 'A'         #assigning first variable for the equation
+        # loop till there are 0's or 1's in each min term
+        for j in range(len(i)):
+            # checking for complement variable to be used
+            if (i[j] =='0'):
+                # concatenating value, ' and + in string POS
+                SOP = SOP + value+"'"
+
+            # checking for uncomplement variable to be used
+            else:
+                # concatenating value and + in string POS
+                SOP = SOP + value
+
+            # increment the alphabet by 1
+            value = chr(ord(value)+1)
+            if j < len(i)-1:
+                SOP += "."
+
+        # appending the SOP string by '+" after every product term
+        SOP = SOP+ "+"
+    # for discarding the extra '+' in the last
+    SOP = SOP[:-1]
+    return SOP
+
+
+def Convert(protein_eq):
+    """Converts POS to SOP"""
+    if '(' in protein_eq:       #The equation is standard form, so only POS expression can have brackets
+        POS_expr, dict = replace_P(protein_eq)
+        no_var = count_no_alphabets(POS_expr)
+        Max_terms = Cal_Max_terms(POS_expr)
+        SOP_expr = Cal_Min_terms(Max_terms, no_var)
+        SOP_expr = replace_A(SOP_expr, dict)
+        return SOP_expr
+
+    else:
+        return protein_eq
+
+def replace_P(protein_eq):
+    """Replaces proteins with alphabets"""
+    sums = protein_eq.split(".")                #Get the sums of terms
+    alpha_eq = ""
+    alpha = 65                                  #Start by assigning alphabets starting from 'A'
+    dict = {}
+    for i in range(len(sums)):
+        terms = sums[i][1:-1].split("+")        #Chop the brackets and get terms
+        alpha_eq += "("
+        for j in range(len(terms)):
+            if terms[j][-1] == "'":             #Check if the terms in complemented
+                if terms[j][:-1] not in dict:           #If the key not already in dictionary
+                    dict[terms[j][:-1]] = chr(alpha)    #then add one
+                    alpha_eq += chr(alpha)+"'"          #Add to the string as well
+                    alpha += 1                          #Get the next alphabet
+                else:
+                    alpha_eq += dict[terms[j][:-1]]+"'"         #If the key is in dictionary then use its value
+            else:
+                if terms[j] not in dict:
+                    dict[terms[j]] = chr(alpha)
+                    alpha_eq += chr(alpha)
+                    alpha += 1
+                else:
+                    alpha_eq += dict[terms[j]]
+
+            if j<len(terms)-1:
+                alpha_eq += "+"                         #concatenating '+' after every terms
+
+        alpha_eq += ")"
+        if i < len(sums)-1:
+            alpha_eq += "."                             #concatenating '.' after every sums
+
+    return alpha_eq, dict       #Return equation with alphabets and the dictionary to be used again while replacing back
+
+def replace_A(alpha_eq, dict):
+    """Replaces alphabets with proteins"""
+    products = alpha_eq.split("+")          #Get the products
+    protein_eq = ""
+    for i in range(len(products)):
+        terms = products[i].split(".")      #Get the terms
+        for j in range(len(terms)):
+            if terms[j][-1] == "'":         #If the term is complemented
+                p = list(dict.keys())[list(dict.values()).index(terms[j][:-1])]         #Get the key of the value from the dictionary
+                protein_eq += p+"'"
+            else:
+                p = list(dict.keys())[list(dict.values()).index(terms[j])]
+                protein_eq += p
+
+            if j < len(terms)-1:
+                protein_eq += "."           #concatenating '.' after every term
+
+        if i < len(products)-1:
+            protein_eq += "+"               #concatenating '+' after every product
+
+    return protein_eq
