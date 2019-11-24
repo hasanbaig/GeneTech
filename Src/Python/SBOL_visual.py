@@ -191,7 +191,7 @@ class SBOLv:
 				ax_dna.set_yticks([])
 				ax_dna.axis('off')
 
-				fig.savefig('SBOL visual '+str(file_num)+'.png', dpi=300)
+				fig.savefig('Circuit '+str(file_num)+' SBOL Visual.png', dpi=700)
 				plt.close('all')
 
 if __name__ == '__main__':

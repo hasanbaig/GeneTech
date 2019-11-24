@@ -1,3 +1,4 @@
+import os
 import sys
 import time
 from PIL import Image
@@ -39,10 +40,12 @@ class MainPage(QtWidgets.QMainWindow):
         #Loading the UI file which have been created for the main window
         loadUi('Genetech.ui', self)
 
-        #Setting the logo for the window
-        self.setWindowIcon(QtGui.QIcon('./Logo/logo.png'))
+        #Setting the logos for the window
+        self.setWindowIcon(QtGui.QIcon('SmallLogo.png'))
         self.setWindowTitle("GeneTech - v2.0")
-
+        pixmap = QPixmap('BigLogo.png')
+        self.MainLogo.setPixmap(pixmap)
+        
         #Intial Label in the status bar
         self.statusBar().showMessage('Ready')
 
@@ -66,6 +69,8 @@ class MainPage(QtWidgets.QMainWindow):
         self.EnterButton.setShortcut("Return")
         #self.actionSave.setShortcut("Ctrl+S")
         self.actionExit.setShortcut("Ctrl+Q")
+        self.actionAbout.setShortcut("Ctrl+O")
+        self.ExitButton.setShortcut("Ctrl+R")
 
         # Messages on the status bar when mouse is hovered on different windows parts
         self.actionAbout.setStatusTip("Know more about Genetech by clicking this button")  
@@ -252,7 +257,7 @@ class MainPage(QtWidgets.QMainWindow):
             #sys.exit()
             self.InsertExpressionEdit.clear()
             self.spinBox.setValue(10)
-            self.doubleSpinBox.setValue(10)
+            self.doubleSpinBox.setValue(100)
             self.xmlList.clear()
             self.CircuitList.clear()
             self.TruthList.clear()
@@ -273,10 +278,7 @@ class MainPage(QtWidgets.QMainWindow):
 
     def About(self):
         print("It's About GeneTech")
-        self.LabelAbout = QLabel()
-        self.LabelAbout.setText('    About GeneTech        ')
-        self.LabelAbout.show()
-        
+        os.startfile('AboutGenetech.txt')
 
     #This is the most important function of this code.
     #First of all it takes the boolean, using that it generates

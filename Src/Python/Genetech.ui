@@ -25,12 +25,9 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_6">
        <item>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="MainLogo">
          <property name="text">
           <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>Logo/NewLogo.png</pixmap>
          </property>
         </widget>
        </item>
@@ -40,6 +37,25 @@
     <item>
      <widget class="QWidget" name="widget" native="true">
       <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QLabel" name="NoofCircuitsLabellabel">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Maximum No. of Gates</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="0">
         <widget class="QLabel" name="InsertExpressionlabel">
          <property name="maximumSize">
@@ -81,39 +97,7 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="NoofCircuitsLabellabel">
-         <property name="maximumSize">
-          <size>
-           <width>150</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Maximum No. of Gates</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <widget class="QRadioButton" name="GatesRadioButton">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>No. of gates</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="3">
+       <item row="4" column="5">
         <widget class="QPushButton" name="ExitButton">
          <property name="minimumSize">
           <size>
@@ -138,7 +122,7 @@
          </property>
         </widget>
        </item>
-       <item row="4" column="4">
+       <item row="4" column="6">
         <widget class="QPushButton" name="EnterButton">
          <property name="minimumSize">
           <size>
@@ -163,23 +147,7 @@
          </property>
         </widget>
        </item>
-       <item row="4" column="1">
-        <widget class="QRadioButton" name="DelayRadioButton">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Delay</string>
-         </property>
-         <property name="checked">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1" colspan="4">
+       <item row="2" column="1" colspan="6">
         <widget class="QDoubleSpinBox" name="doubleSpinBox">
          <property name="font">
           <font>
@@ -201,45 +169,19 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="1" colspan="4">
-        <widget class="QSpinBox" name="spinBox">
+       <item row="4" column="1">
+        <widget class="QRadioButton" name="DelayRadioButton">
          <property name="font">
           <font>
            <family>Times New Roman</family>
            <pointsize>12</pointsize>
           </font>
          </property>
-         <property name="value">
-          <number>10</number>
+         <property name="text">
+          <string>Delay</string>
          </property>
-        </widget>
-       </item>
-       <item row="0" column="1" colspan="4">
-        <widget class="QLineEdit" name="InsertExpressionEdit">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="placeholderText">
-          <string>IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1" colspan="4">
-        <widget class="QSpinBox" name="CircuitSpinBox">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="minimum">
-          <number>0</number>
-         </property>
-         <property name="value">
-          <number>10</number>
+         <property name="checked">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -256,6 +198,35 @@
          </property>
         </widget>
        </item>
+       <item row="0" column="1" colspan="6">
+        <widget class="QLineEdit" name="InsertExpressionEdit">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="placeholderText">
+          <string>IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="6">
+        <widget class="QSpinBox" name="CircuitSpinBox">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="value">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
        <item row="4" column="0">
         <widget class="QLabel" name="label_8">
          <property name="font">
@@ -268,6 +239,38 @@
           <string>Order By</string>
          </property>
         </widget>
+       </item>
+       <item row="1" column="1" colspan="6">
+        <widget class="QSpinBox" name="spinBox">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="value">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QRadioButton" name="GatesRadioButton">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>No. of gates</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <layout class="QVBoxLayout" name="verticalLayout_8"/>
+       </item>
+       <item row="4" column="3">
+        <layout class="QVBoxLayout" name="verticalLayout_9"/>
        </item>
       </layout>
      </widget>
@@ -631,6 +634,12 @@
      <family>Times New Roman</family>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>false</bool>
    </property>
   </action>
   <action name="actionExit">

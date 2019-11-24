@@ -262,7 +262,7 @@ class SBOL_File:
                                 P_map.local = P_fc.identity
                                 P_map.remote = Components[1][index_of_myP].identity
 
-                result = doc.write("Output_Circuit_" + str(file_num) +".xml")        #To save the SBOL File
+                result = doc.write("SBOL File " + str(file_num) +".xml")        #To save the SBOL File
 
 if __name__ == '__main__':
     inputExp = "IPTG'.aTc'.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'"
