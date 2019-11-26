@@ -192,8 +192,9 @@ class MainPage(QtWidgets.QMainWindow):
         options |= QFileDialog.DontUseNativeDialog
         UserfileName, _ = QFileDialog.getSaveFileName(self,"Save SBOL File","","All Files (*);;XML Files (*.xml)", options=options)
         if UserfileName:
-            if (":" in UserfileName) or ("?" in UserfileName) or ("/" in UserfileName) or ("*" in UserfileName) or ("<" in UserfileName) or (">" in UserfileName) or ("|" in UserfileName) or ('"' in UserfileName):
-                 QMessageBox.about(self, "Alert", "A file name can't contain any of the following \n \ / : * ? < > |")
+            fileName = UserfileName.split("/")[-1]
+            if (":" in fileName) or ("?" in fileName) or ("/" in fileName) or ("*" in fileName) or ("<" in fileName) or (">" in fileName) or ("|" in fileName) or ('"' in fileName):
+                QMessageBox.about(self, "Alert", "A file name can't contain any of the following \n \ / : * ? < > |")
             else:
                 print(UserfileName)
                 f= open(UserfileName,"w+")
@@ -236,8 +237,9 @@ class MainPage(QtWidgets.QMainWindow):
         options |= QFileDialog.DontUseNativeDialog
         UserfileName, _ = QFileDialog.getSaveFileName(self,"Save Image File","","All Files (*);;Image Files (*.png)", options=options)
         if UserfileName:
-            if ":" in UserfileName:
-                 QMessageBox.about(self, "Alert", "A file name can't contain any of the following \n \ / : * ? < > |")
+            fileName = UserfileName.split("/")[-1]
+            if (":" in fileName) or ("?" in fileName) or ("/" in fileName) or ("*" in fileName) or ("<" in fileName) or (">" in fileName) or ("|" in fileName) or ('"' in fileName):
+                QMessageBox.about(self, "Alert", "A file name can't contain any of the following \n \ / : * ? < > |")
             else:
                 print(UserfileName)
                 item = self.CircuitList.currentItem() #the selected item
@@ -258,11 +260,20 @@ class MainPage(QtWidgets.QMainWindow):
             self.InsertExpressionEdit.clear()
             self.spinBox.setValue(10)
             self.doubleSpinBox.setValue(100)
+            self.CircuitSpinBox.value(10)
             self.xmlList.clear()
             self.CircuitList.clear()
             self.TruthList.clear()
             self.ProgressBar.setValue(0)
             self.Notes.clear()
+
+
+    def ResetBeforeNew(self):
+        self.xmlList.clear()
+        self.CircuitList.clear()
+        self.TruthList.clear()
+        self.ProgressBar.setValue(0)
+        self.Notes.clear()
 
 
     #This function is dedicated to the close the main wondow
@@ -292,6 +303,7 @@ class MainPage(QtWidgets.QMainWindow):
     ttList=[]
     List_TruthTable_Input =[]
     def EnterExp(self):
+        self.ResetBeforeNew()
         if self.DelayRadioButton.isChecked():
             option = 0
         elif self.GatesRadioButton.isChecked():
