@@ -1,4 +1,17 @@
-﻿**********GeneTech***********
+﻿****************************GeneTech****************************
+
+GeneTech (extracted from Genetic Technology mapping) is a tool which allows a user to generate genetic logic circuits only by specifying the logical function desired to be achieved in a living cell. It performs Boolean optimization, followed by synthesis and technology mapping using a library of genetic logic gates. The genetic logic gates library used in this work has been developed and tested in the laboratory by MIT and Boston University [1]. GeneTech takes the Boolean expression of a genetic circuit as input, and then first optimize it. Afterwards, it synthesizes the optimized Boolean expression into NOR-NOT form in order to construct the circuit using the real NOR/NOT gates available in the genetic gates library [1]. In the end, GeneTech performs technology mapping to generate all the feasible circuits, with different genetic gates, to achieve the desired logical behavior.  
+
+After performing all the operations to generate the possible circuits, it processes all the circuits one by one to generate their standard SBOL files, Logical Representation and SBOL Visual Representation, and now you will able to save all the desired circuits and their representations as well, to be used in future or import in any other software.
+
+GeneTech is a java and python based tool and is now available in executable application format. In this short document, you will learn how to use GeneTech (v2.0) to develop genetic circuits.  
+
+Stochastic simulation algorithm (SSA) has been implemented to perform stochastic simulations of SBML models. Furthermore, D-VASim is also capable of simulating the deterministic behavior of a bio model by solving ordinary differential equations. 
+
+Latest version of GeneTech can be downloaded from http://bda.compute.dtu.dk/downloads/genetech/. The sample set of genetic Boolean expressions have also been included in the download package. 
+
+
+***************************************************************************
 
 In this section, you will learn how to run GeneTech and construct desired genetic circuits.
 
@@ -49,4 +62,4 @@ Below are some example Boolean expression which a user can use to test the tool.
 4. IPTG'.aTc'.Arabinose+IPTG.aTc'.Arabinose'+IPTG.aTc'.Arabinose
 
 
-**********Happy Generating Genetic Circuits************
+***********************Happy Generating Genetic Circuits***********************
