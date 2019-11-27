@@ -3,6 +3,9 @@ import sys
 import time
 from PIL import Image
 import Gateway as g
+import SBOL_File as sbol
+import Logical_Representation as logic
+import SBOL_visual as visual
 from PyQt5 import QtCore, QtGui, uic, QtWidgets
 from PyQt5.QtCore import pyqtSlot, QCoreApplication, QBasicTimer, QThread, pyqtSignal
 from PyQt5.QtWidgets import QApplication, QDialog, QPushButton, QLabel, QLineEdit, QMessageBox, QFileDialog, QTabWidget, QWidget, QListWidget, QProgressBar
@@ -10,21 +13,11 @@ from PyQt5.uic import loadUi
 from PyQt5.QtGui import QIcon, QFont, QPixmap
 from itertools import product
 from functions import *
-
+from time import sleep
+import random
 
 font = QFont("Times", 11)
 
-
-#THis class
-class ProgressClass(QThread):
-    Signal = pyqtSignal(int)
-    def run(self):
-        increament = 0
-        while increament < 100:
-            increament +=1
-            time.sleep(0.01)
-            self.Signal.emit(increament)
-            
 
 # The main class which operates the entire widnow
 class MainPage(QtWidgets.QMainWindow):
@@ -73,21 +66,11 @@ class MainPage(QtWidgets.QMainWindow):
         self.ExitButton.setShortcut("Ctrl+R")
 
         # Messages on the status bar when mouse is hovered on different windows parts
-        self.actionAbout.setStatusTip("Know more about Genetech by clicking this button")  
-        self.actionExit.setStatusTip("Exit the window")
+        self.actionAbout.setStatusTip("Know more about GeneTech by clicking this button")  
+        self.actionExit.setStatusTip("Reset")
         self.EnterButton.setStatusTip("Press the button for result")
         self.ExitButton.setStatusTip("Exit the window")
-        self.InsertExpressionEdit.setStatusTip("Insert a boolean expression here")
-
-
-    def Progress(self):
-        self.ProgClass = ProgressClass()
-        self.ProgClass.Signal.connect(self.onSignal)
-        self.ProgClass.start()
-
-    def onSignal(self, value):
-        self.ProgressBar.setValue(value)
-
+        self.InsertExpressionEdit.setStatusTip("Insert a Boolean expression here")
     
 
     # This funtion reads the txt which of circuits and returns a list
@@ -107,8 +90,6 @@ class MainPage(QtWidgets.QMainWindow):
                 if j == '':
                     i.remove(j)
         return circuits 
-
-
 
 
     def viewCircuit(self):
@@ -303,7 +284,6 @@ class MainPage(QtWidgets.QMainWindow):
     ttList=[]
     List_TruthTable_Input =[]
     def EnterExp(self):
-        self.ResetBeforeNew()
         if self.DelayRadioButton.isChecked():
             option = 0
         elif self.GatesRadioButton.isChecked():
@@ -319,11 +299,23 @@ class MainPage(QtWidgets.QMainWindow):
             bexp = 'a'  
         else:
             self.ProgressBar.setVisible(True)
-            self.Progress()
+            #self.Progress()
             self.ProgressBar.setValue(0)
             self.result.append("a")
             print(bexp,"################")
-            g.Gateway(bexp, self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value())
+            g.Gateway(bexp)
+            self.ProgressBar.setValue(25)
+            sleep(1.5)
+            number = random.randint(30,70)
+            self.ProgressBar.setValue(number)
+            sbol.SBOL_File(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()) #create SBOl files
+            number = random.randint(75,90)
+            self.ProgressBar.setValue(number)
+            sleep(2)
+            logic.Logical_Representation(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()) #Create Logical Representation images
+            visual.SBOLv(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value())   #create SBOL visual Representation images
+            self.ProgressBar.setValue(100)
+
             print(bexp)
             bexp = Convert(bexp)
             print(bexp)
@@ -373,7 +365,6 @@ class MainPage(QtWidgets.QMainWindow):
                 res = " ".join(s)
                 self.TruthList.addItem(res) 
                 self.ttList.clear()
-        #self.Progressbar()
         if len(self.result) > 0: #Call these functions only if there is an expression 
             self.CreateCircuitList()
             self.CreateXMLList()
@@ -381,13 +372,6 @@ class MainPage(QtWidgets.QMainWindow):
         
             
             
-
-#app = QApplication(sys.argv)
-#widget = MainPage()
-#widget.show()
-#sys.exit(app.exec_())
-
-
 
 if __name__ == "__main__":
     app = QCoreApplication.instance()               # Fixes error with kernel crashing on second run of application
