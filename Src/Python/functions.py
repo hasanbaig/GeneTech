@@ -21,7 +21,8 @@ def DeleteExistingImages():
     """Delete all the existing Images in the directory"""
     list = glob.glob('**/*.png', recursive=True)
     for i in range(len(list)):
-        os.remove(list[i])
+        if list[i] != 'BigLogo.png' and list[i] != 'SmallLogo.png':
+            os.remove(list[i])
 
 def DeleteExistingFiles():
     """Delete all the existing SBOL files in the directory"""
