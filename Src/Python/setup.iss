@@ -27,9 +27,6 @@ Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
 
-[Files]
-Source: "ReadMe.TXT"; DestDir: "{app}"; Flags: isreadme
-
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "danish"; MessagesFile: "compiler:Languages\Danish.isl"
@@ -42,6 +39,8 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 Source: "D:\uni docs and soft\semester 7\Fyp\Source_Code\Python src\build\exe.win-amd64-3.6\Genetech.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\uni docs and soft\semester 7\Fyp\Source_Code\Python src\build\exe.win-amd64-3.6\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+Source: "Read Me.rtf"; DestDir: "{app}"; Flags: isreadme
+Source: "GeneTech_QSG_2.0.pdf"; DestDir: "{app}"; Flags: isreadme
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\{#MyAppLogo}"

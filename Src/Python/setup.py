@@ -5,7 +5,7 @@ setup(
     name = "GeneTech",
     options = {'build_exe':{'packages':['pyqt5', 'SchemDraw',
                                         'matplotlib', 'dnaplotlib',
-                                        'py4j', 'sbol', 'PIL',]}},
+                                        'py4j', 'sbol', 'PIL']}},
     executables = [
         Executable(
             "Genetech.py",

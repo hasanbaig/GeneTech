@@ -79,7 +79,6 @@ class MainPage(QtWidgets.QMainWindow):
         f = open("circuits.txt")
         circuits = []
         for i in f:
-            #print(i.replace('\n',''))            
             if "*" in i:
                 cnt = []
                 circuits.append(cnt)
@@ -131,7 +130,6 @@ class MainPage(QtWidgets.QMainWindow):
             options |= QFileDialog.DontUseNativeDialog
             UserfileName, _ = QFileDialog.getOpenFileName(self,"Import File to Notes", "","All Files (*);;TxtFiles (*.txt)", options=options)
             if UserfileName:
-                print(UserfileName)
                 f = open(UserfileName,"r")
                 data = f.read()
                 self.Notes.setText(data)
@@ -149,7 +147,6 @@ class MainPage(QtWidgets.QMainWindow):
         if len(self.checkxmlList) > 0:
             self.xmlList.clear()
             self.checkxmlList.clear()
-            print(self.checkxmlList)
             for CircuitIndex in range(CountFiles()):
                 self.xmlList.addItem("SBOL File "+str(CircuitIndex+1))
                 self.checkxmlList.append("Check")            
@@ -177,7 +174,6 @@ class MainPage(QtWidgets.QMainWindow):
             if (":" in fileName) or ("?" in fileName) or ("/" in fileName) or ("*" in fileName) or ("<" in fileName) or (">" in fileName) or ("|" in fileName) or ('"' in fileName):
                 QMessageBox.about(self, "Alert", "A file name can't contain any of the following \n \ / : * ? < > |")
             else:
-                print(UserfileName)
                 f= open(UserfileName,"w+")
                 item = self.xmlList.currentItem()
                 fo = open(str(item.text())+".xml")
@@ -222,7 +218,6 @@ class MainPage(QtWidgets.QMainWindow):
             if (":" in fileName) or ("?" in fileName) or ("/" in fileName) or ("*" in fileName) or ("<" in fileName) or (">" in fileName) or ("|" in fileName) or ('"' in fileName):
                 QMessageBox.about(self, "Alert", "A file name can't contain any of the following \n \ / : * ? < > |")
             else:
-                print(UserfileName)
                 item = self.CircuitList.currentItem() #the selected item
                 saveimg  = Image.open(str(item.text())+".png") #use this image to save
                 saveimg.save(str(UserfileName)+".png") #save image as
@@ -234,7 +229,6 @@ class MainPage(QtWidgets.QMainWindow):
     #This function, upon clicking the reset button on main window,
     #clears all the generated/entered values on the main wondow
     def ResetAll(self):
-        print("comes here")
         mBox = QMessageBox.question(self, "Warning!!", "Are you sure you want to clear?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if mBox == QMessageBox.Yes:
             #sys.exit()
@@ -263,13 +257,11 @@ class MainPage(QtWidgets.QMainWindow):
     #selected in case the user mistakenly clicks the close butotn
     #and presses the enter button.
     def CloseApp(self):
-        print("CloseApp")
         mBox = QMessageBox.question(self, "Warning!!", "Are you sure you want exit?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if mBox == QMessageBox.Yes:
             sys.exit()
 
     def About(self):
-        print("It's About GeneTech")
         os.startfile('AboutGenetech.txt')
 
     #This is the most important function of this code.
@@ -290,7 +282,6 @@ class MainPage(QtWidgets.QMainWindow):
             option = 1
         a=0
         bexp = self.InsertExpressionEdit.text() #User expression
-        print(bexp)
         if bexp == "":
             mBox1 = QMessageBox.about(self, "Alert", "Please insert the expression") # warning in case of empty expression
         elif " " in bexp:
@@ -302,23 +293,23 @@ class MainPage(QtWidgets.QMainWindow):
             #self.Progress()
             self.ProgressBar.setValue(0)
             self.result.append("a")
-            print(bexp,"################")
+
             g.Gateway(bexp)
+            DisplayData()
+            DisplayCircuits()
             self.ProgressBar.setValue(25)
-            sleep(1.5)
+            sleep(1)
             number = random.randint(30,70)
             self.ProgressBar.setValue(number)
             sbol.SBOL_File(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()) #create SBOl files
             number = random.randint(75,90)
             self.ProgressBar.setValue(number)
-            sleep(2)
+            sleep(0.1)
             logic.Logical_Representation(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()) #Create Logical Representation images
             visual.SBOLv(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value())   #create SBOL visual Representation images
             self.ProgressBar.setValue(100)
 
-            print(bexp)
             bexp = Convert(bexp)
-            print(bexp)
             bexp = "".join(bexp.split())
             #bexp = bexp.strip() #Remove spaces in the expression
             finalexp=[]
@@ -344,7 +335,6 @@ class MainPage(QtWidgets.QMainWindow):
                 self.ttList.append("   ")
             self.ttList.append(":   ")
             self.ttList.append(bexp)
-            print(self.ttList)
             s = [str(i) for i in self.ttList]
             res = " ".join(s)
             self.TruthList.addItem(res)
@@ -355,7 +345,7 @@ class MainPage(QtWidgets.QMainWindow):
                 a+=1
                 env = dict(zip(TruthTable_Input, values)) #put the TruthTable_Input and values togather
                 pk = int(eval(code, env)) #generate the output of truthtable
-                print(' '.join(str(v) for v in values), ':', pk) #join ouput and insput and print
+
                 for v in values: #append the list to show on main window
                    self.ttList.append(v)
                    self.ttList.append("     ")

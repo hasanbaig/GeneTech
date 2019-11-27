@@ -18,12 +18,14 @@ public class Main
 	public static FileWriter fw; 
 	public static void main (String [] args) throws Exception
 	{
+		//Creates a GatewayServer instance with default port (25333), default address (127.0.0.1), and default timeout value (no timeout).
 		GatewayServer gatewayServer = new GatewayServer(new Main());
-        gatewayServer.start();
+        gatewayServer.start(false); //Starts to accept connections
         System.out.println("Gateway Server Started");
-		
+		//function();
 	}
 		
+	//public static void function() throws Exception
 	public static void function(String inputBoolExp) throws Exception
 	{
 		try{fw = new FileWriter("../Data.txt");}
@@ -31,6 +33,7 @@ public class Main
 		//Calling method to check aLVJavaInterface Class
 		ALVJavaInterface inputInterface = new ALVJavaInterface ();
 		//String inputBoolExp = "IPTG'.aTc.Arabinose'+IPTG'.aTc.Arabinose+IPTG.aTc.Arabinose";
+		//String inputBoolExp = "IPTG'.aTc'.Arabinose'+IPTG.aTc'.Arabinose'+IPTG.aTc.Arabinose'";
 		String newInputEq = initLVJavaInterface(inputInterface, inputBoolExp);
 		
 		System.out.println("***************************************************************************\n");

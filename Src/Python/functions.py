@@ -323,7 +323,6 @@ def Cal_Min_terms(Max_terms, no_var):
     SOP = SOP[:-1]
     return SOP
 
-
 def Convert(protein_eq):
     """Converts POS to SOP"""
     if '(' in protein_eq:       #The equation is standard form, so only POS expression can have brackets
@@ -392,3 +391,24 @@ def replace_A(alpha_eq, dict):
             protein_eq += "+"               #concatenating '+' after every product
 
     return protein_eq
+
+def DisplayCircuits():
+    """Display circuits"""
+    f = open("circuits.txt")
+    for i in f:
+        print(i, end ="")
+
+def DisplayData():
+    """Display Data"""
+    f = open("Data.txt")
+    l = []
+    for i in f:
+        l.append(i)
+
+    print("Optimized Expression:", l[0])
+    print("New Cost:", l[1])
+    print("Synthesized Expression into NOT-NOR Form:", l[2])
+    print("New Expression with input proteins:", l[3])
+
+
+
