@@ -40,7 +40,8 @@ Source: "D:\uni docs and soft\semester 7\Fyp\Source_Code\Python src\build\exe.wi
 Source: "D:\uni docs and soft\semester 7\Fyp\Source_Code\Python src\build\exe.win-amd64-3.6\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 Source: "Read Me.rtf"; DestDir: "{app}"; Flags: isreadme
-Source: "GeneTech_QSG_2.0.pdf"; DestDir: "{app}"; Flags: isreadme
+Source: "GeneTech_QSG_2.0.pdf"; DestDir: "{app}"; Flags: isreadme; 
+Source: "ActivePython-3.6.6.3606-win64-x64.msi"; DestDir: "{app}\ActiveState";
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\{#MyAppLogo}"
@@ -48,5 +49,5 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilen
 Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\{#MyAppLogo}"; Tasks: quicklaunchicon
 
 [Run]
+Filename: msiexec.exe; WorkingDir: "{app}\ActiveState"; Parameters: "/i""{app}\ActiveState\ActivePython-3.6.6.3606-win64-x64.msi""/qb"; Flags: shellexec waituntilterminated; StatusMsg: "Installing ActivePython 3.6.6...";
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
-
