@@ -25,6 +25,3 @@ You need to install the following libraries before running the GeneTech on your 
 * dnaplotlib 
 
 Once installed, run the Gateway.py file. 
-
-### References
-A. a K. Nielsen, B. S. Der, J. Shin, P. Vaidyanathan, V. Paralanov, E. a Strychalski, D. Ross, D. Densmore, and C. a. Voigt, “Genetic circuit design automation.,” Science, vol. 352, no. 6281, p. aac7341, 2016.
