@@ -25,3 +25,13 @@ You need to install the following libraries before running the GeneTech on your 
 * dnaplotlib 
 
 Once installed, run the Gateway.py file. 
+
+### Current Contributors
+1. Hasan Baig
+2. Muhammad Ali Bhutto
+3. Mukesh Kumar
+
+### Past Contributors
+1. Hasan Baig
+2. Abdullah Siddiqui
+3. Adil Ali Khan
