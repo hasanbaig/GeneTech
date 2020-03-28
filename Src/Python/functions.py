@@ -66,20 +66,22 @@ def Delay(promotor1, CDS, promotor2 = None):
 
     Gates = GatherGates()           #Gather gates by reading the file
     Output_P = 'P' + CDS[1:-1]
-
+    baseLst = baseList()
+    promoter1_present = promotor1 in baseLst
     if promotor2 == None:                   #The condition for NOT gates
-        if promotor1 in baseList():         #If the promotor is one of the basic promotors
+        if promoter1_present:         #If the promotor is one of the basic promotors
             return Check_NOT(promotor1, Output_P, Gates[0])         #Returns the time of the NOT gate with these inputs
         else:
             return Check_NOT(promotor1, Output_P, Gates[1])
 
     else:       #For NOR Gates
         #Check all possibilties of inputs for internal, external and semi-external gates
-        if promotor1 in baseList() and promotor2 in baseList():
+        promoter2_present = promotor2 in baseLst
+        if promoter1_present and promoter2_present:
             return Check_NOR(promotor1, promotor2, Output_P, Gates[2])
-        elif promotor1 in baseList() and promotor2 not in baseList():           #e.g. if P1=PTac and P2=PAmtR
+        elif promoter1_present and not promoter2_present:           #e.g. if P1=PTac and P2=PAmtR
             return Check_NOR(promotor1, promotor2, Output_P, Gates[3])
-        elif promotor2 in baseList() and promotor1 not in baseList():           #e.g. if P1=PAmtR and P2=PTac
+        elif promoter2_present and not promoter1_present:           #e.g. if P1=PAmtR and P2=PTac
             return Check_NOR(promotor1, promotor2, Output_P, Gates[3])
         else:
             return Check_NOR(promotor1, promotor2, Output_P, Gates[4])
