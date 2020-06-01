@@ -27,8 +27,8 @@ You need to install the following libraries before running the GeneTech on your 
 Once installed, run the Gateway.py file. 
 
 ### Current Contributors
-1. Hasan Baig
-2. Mudasir Hanif
+1. Mudasir Hanif
+2. Hasan Baig
 
 ### Past Contributors
 1. Hasan Baig
