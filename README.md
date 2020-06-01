@@ -28,10 +28,12 @@ Once installed, run the Gateway.py file.
 
 ### Current Contributors
 1. Hasan Baig
-2. Muhammad Ali Bhutto
-3. Mukesh Kumar
+2. Mudasir Hanif
 
 ### Past Contributors
 1. Hasan Baig
-2. Abdullah Siddiqui
-3. Adil Ali Khan
+2. Jan Madsen
+3. Muhammad Ali Bhutto
+4. Mukesh Kumar
+5. Abdullah Siddiqui
+6. Adil Ali Khan
