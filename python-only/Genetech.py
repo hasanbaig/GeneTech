@@ -23,7 +23,9 @@ font = QFont("Times", 11)
 # The main class which operates the entire widnow
 class MainPage(QtWidgets.QMainWindow):
     def __init__(self):
-        
+        if not os.path.exists(os.getcwd()+'/user_files'):
+            os.makedirs(os.getcwd()+'/user_files')
+
         # Lists which are being used in the code later
         self.result=[]
         self.tablist=[]
@@ -94,7 +96,8 @@ class MainPage(QtWidgets.QMainWindow):
 
     def viewCircuit(self):
         if self.CircuitList.currentItem():
-            img = Image.open(str(self.CircuitList.currentItem().text())+".png")
+            img = Image.open('user_files/'+str(self.CircuitList.currentItem().text())+".png")
+            print('user_files/'+str(self.CircuitList.currentItem().text())+".png")
             img.show()
 
 
@@ -124,11 +127,11 @@ class MainPage(QtWidgets.QMainWindow):
                 self.CircuitList.addItem("Circuit "+str(CircuitIndex+1)+" SBOL Visual")
                 self.checkList.append("Check")         
  
-   
     #Code for importing a file in Notes
     def FileOpenDialog(self):
             options = QFileDialog.Options()
             options |= QFileDialog.DontUseNativeDialog
+   
             UserfileName, _ = QFileDialog.getOpenFileName(self,"Import File to Notes", "","All Files (*);;TxtFiles (*.txt)", options=options)
             if UserfileName:
                 f = open(UserfileName,"r")
@@ -302,7 +305,7 @@ class MainPage(QtWidgets.QMainWindow):
             sleep(1)
             number = random.randint(30,70)
             self.ProgressBar.setValue(number)
-            print("{0}, {1}, {2}, {3}".format(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()))
+            #print("{0}, {1}, {2}, {3}".format(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()))
             sbol.SBOL_File(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()) #create SBOl files
             number = random.randint(75,90)
             self.ProgressBar.setValue(number)
