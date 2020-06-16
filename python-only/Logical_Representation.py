@@ -183,7 +183,7 @@ class Logical_Representation:
                         d.add(e.LINE, xy=G4.end, d='up', endpts=[[use[z][1].end[0],G4.start[1]],use[z][1].end])
 
                 d.draw(showplot=False)
-                d.save('Circuit '+str(file_num)+' Logic.png', dpi=300)
+                d.save('user_files/Circuit '+str(file_num)+' Logic.png', dpi=300)
 
 if __name__ == '__main__':
     logic = Logical_Representation(1000, 1000)
