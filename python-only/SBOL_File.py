@@ -25,6 +25,7 @@ class SBOL_File:
         return Component_strings
 
     def CreateFile(self, input_list, circuits, total_gates, total_time, option, num):
+		
         for i in range(circuits): #iter for each circuit
             file_num = SortNum(i, option) + 1
             if Total_Gates(i) <= total_gates and Total_time(i) <= total_time and file_num <= num:   #If Total Delay and number of gates are less than the input
@@ -262,7 +263,7 @@ class SBOL_File:
                                 P_map.local = P_fc.identity
                                 P_map.remote = Components[1][index_of_myP].identity
 
-                result = doc.write("SBOL File " + str(file_num) +".xml")        #To save the SBOL File
+                result = doc.write("user_files/SBOL File " + str(file_num) +".xml")        #To save the SBOL File
 
 if __name__ == '__main__':
     inputExp = "IPTG'.aTc'.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'"
