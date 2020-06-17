@@ -1,0 +1,10 @@
+py4j
+SchemDraw
+pyqt5
+matplotlib
+Pillow
+pandas
+dnaplotlib
+sbol2
+
+
