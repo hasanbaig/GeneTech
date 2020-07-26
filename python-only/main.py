@@ -7,10 +7,10 @@ from file_writer import FileWriter
 from tech_mapping import TechMapper
 from simulated_annealing import SimulatedAnnealing
 from min_terms_processor import MinTermsProcessor
-
+			 
 def process(inputBoolExp = None):
 	inputInterface = LVInterface()
-	#inputBoolExp = " IPTG'.aTc.Arabinose'+IPTG'.aTc.Arabinose+IPTG.aTc.Arabinose"
+	#inputBoolExp = "IPTG'.aTc.Arabinose'+IPTG'.aTc.Arabinose+IPTG.aTc.Arabinose"
 	if not inputBoolExp:
 		inputBoolExp = "IPTG'.aTc'.Arabinose'+IPTG.aTc'.Arabinose'+IPTG.aTc.Arabinose'"
 	inputProt = ["IPTG", "aTc", "Arabinose"]
@@ -70,8 +70,6 @@ def process(inputBoolExp = None):
 	mapGatesOnExpression.finalize()
 	
 def output_checker(fname1 = "circuits.txt", fname2 = None):
-	if not fname2:
-		fname2 = "C:/Users/SANYA/genetech/Src/circuits_java.txt"
 	f1 = open(fname1, "r")
 	f2 = open(fname2, "r")
 	lines1 = f1.readlines()
@@ -84,5 +82,4 @@ def output_checker(fname1 = "circuits.txt", fname2 = None):
 	print("passed")
 '''
 main()
-output_checker()
 '''
