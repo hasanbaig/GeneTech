@@ -3,7 +3,6 @@ from lv_interface import LVInterface
 from scan_literals import ScanCommonLiterals
 from calculate_cost import CostCalculator
 from reduce_expression import ReduceExpression
-from file_writer import FileWriter
 from tech_mapping import TechMapper
 from simulated_annealing import SimulatedAnnealing
 from min_terms_processor import MinTermsProcessor
