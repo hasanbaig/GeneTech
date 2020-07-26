@@ -1,8 +1,10 @@
 ******************* Genetic Circuit 1 *****************
 
-PTet-> (AmtR) ----|PAmtR-> PTac-> (HlYllR) ----|PHlYllR-> PBad-> (BM3R1) ----|PBM3R1-> (YFP)
+PTac-> (HlYllR) ----|PHlYllR-> PBad-> (AmtR) ----|PAmtR-> PAmeR-> (Betl) ----|PBetl-> (YFP)
+PTet-> (AmeR)-----------------------------------------------^
 
 ******************* Genetic Circuit 2 *****************
 
-PTet-> (AmtR) ----|PAmtR-> PTac-> (HlYllR) ----|PHlYllR-> PBad-> (SrpR) ----|PSrpR-> (YFP)
+PTac-> (HlYllR) ----|PHlYllR-> PBad-> (SrpR) ----|PSrpR-> PAmtR-> (PhlF) ----|PPhlF-> (YFP)
+PTet-> (AmtR)-----------------------------------------------^
 

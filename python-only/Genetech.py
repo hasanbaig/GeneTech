@@ -223,7 +223,7 @@ class MainPage(QtWidgets.QMainWindow):
                 QMessageBox.about(self, "Alert", "A file name can't contain any of the following \n \ / : * ? < > |")
             else:
                 item = self.CircuitList.currentItem() #the selected item
-                saveimg  = Image.open(str(item.text())+".png") #use this image to save
+                saveimg  = Image.open('user_files/'+str(item.text())+".png") #use this image to save
                 saveimg.save(str(UserfileName)+".png") #save image as
 
 #or "?" in UserfileName or "/" in UserfileName or "*" in UserfileName or "<" in UserfileName or ">" in UserfileName or "|" in UserfileName or '"' in UserfileName:

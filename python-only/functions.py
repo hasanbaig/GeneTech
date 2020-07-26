@@ -1,3 +1,7 @@
+from sbol2 import *
+#
+import sbol2
+print(sbol2.__version__)
 import glob, os
 
 def baseList():
@@ -85,12 +89,14 @@ def Delay(promotor1, CDS, promotor2 = None):
             return Check_NOR(promotor1, promotor2, Output_P, Gates[3])
         else:
             return Check_NOR(promotor1, promotor2, Output_P, Gates[4])
-
+    return 0
+	
 def Check_NOT(promotor, Output_P, Gates):
     """Check the whole list and returns the delay of the gate matching with inputs"""
     for i in Gates:
         if i[0] == promotor and i[1] == Output_P:
             return i[2]
+    return 0 
 
 def Check_NOR(promotor1, promotor2, Output_P, Gates):
     """Check the whole list and returns the delay of the gate matching with inputs"""
@@ -100,7 +106,8 @@ def Check_NOR(promotor1, promotor2, Output_P, Gates):
             return i[3]
         elif i[0] == promotor2 and i[1] == promotor1 and i[2] == Output_P:          #e.g. if P1=PBetl and P2=PAmtR
             return i[3]
-
+    return 0
+	
 def GatherGates():
     f = open("GatesLib.txt")
     lst = []
