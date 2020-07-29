@@ -16,6 +16,7 @@ from functions import *
 from time import sleep
 import random
 from main import process
+from circuit_builder import CircuitBuilder
 
 font = QFont("Times", 11)
 
@@ -35,7 +36,7 @@ class MainPage(QtWidgets.QMainWindow):
 
         #Loading the UI file which have been created for the main window
         loadUi('Genetech.ui', self)
-
+        
         #Setting the logos for the window
         self.setWindowIcon(QtGui.QIcon('SmallLogo.png'))
         self.setWindowTitle("GeneTech - v2.0")
@@ -47,6 +48,8 @@ class MainPage(QtWidgets.QMainWindow):
 
         # Button Entries which have been coded and these are called when button are clicked
         self.SaveButton.clicked.connect(self.SaveLabel)
+        self.DrawButton.clicked.connect(self.DrawWindow)
+
         self.ViewButton.clicked.connect(self.viewCircuit)
         self.ImportNotesButton.clicked.connect(self.FileOpenDialog)
         self.SaveNotesButton.clicked.connect(self.SaveNotes)
@@ -75,6 +78,11 @@ class MainPage(QtWidgets.QMainWindow):
         self.ExitButton.setStatusTip("Exit the window")
         self.InsertExpressionEdit.setStatusTip("Insert a Boolean expression here")
     
+    #This function is to open the drawing canvas
+    def DrawWindow(self):
+        circuit_builder = CircuitBuilder()
+        circuit_builder.show()
+        self.hide()
 
     # This funtion reads the txt which of circuits and returns a list
     #with the number of generated circuits by the inserted boolean expression

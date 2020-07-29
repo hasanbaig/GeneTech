@@ -198,19 +198,6 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="1" colspan="6">
-        <widget class="QLineEdit" name="InsertExpressionEdit">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="placeholderText">
-          <string>IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'</string>
-         </property>
-        </widget>
-       </item>
        <item row="3" column="1" colspan="6">
         <widget class="QSpinBox" name="CircuitSpinBox">
          <property name="font">
@@ -271,6 +258,32 @@
        </item>
        <item row="4" column="3">
         <layout class="QVBoxLayout" name="verticalLayout_9"/>
+       </item>
+       <item row="0" column="1" colspan="5">
+        <widget class="QLineEdit" name="InsertExpressionEdit">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="placeholderText">
+          <string>IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QPushButton" name="DrawButton">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Draw</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
