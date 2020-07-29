@@ -26,7 +26,7 @@ class QDMGraphicsScene(QGraphicsScene):
     
         self.setBackgroundBrush(QColor("#D3D3D3"))
 
-	def save(self, filename):
+    def save(self, filename):
         self._master_rect = self.itemsBoundingRect()
         print(self._master_rect)
         self._master_rect.adjust(-20, -20, 20, 20)
@@ -43,7 +43,7 @@ class QDMGraphicsScene(QGraphicsScene):
 
         # Save the image to a file.
         image.save(filename)
-	
+    
     def setGrScene(self, width, height):
         self.setSceneRect(-width // 2, -height // 2, width, height)
 
