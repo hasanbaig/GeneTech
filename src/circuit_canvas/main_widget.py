@@ -8,7 +8,7 @@ from window_graphics_scene import QDMGraphicsScene
 from circuit_scene import CircuitScene
 from part_widget import PartWidget
 
-class Window(QWidget):
+class MainScreenWidget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
 
@@ -16,11 +16,11 @@ class Window(QWidget):
 
 
     def initUI(self):
-        self.setGeometry(100, 100, 800, 600)
+        
         self.layout = QVBoxLayout()
         self.layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(self.layout)
-        self.setWindowIcon(QIcon('../SmallLogo.png'))
+        
         
         # crate graphics scene
         #self.grScene = QDMGraphicsScene()
@@ -55,27 +55,7 @@ class Window(QWidget):
         self.layout.addWidget(self.view)
         self.layout.addWidget(self.myListWidget1)
 
-        self.setWindowTitle("GeneTech - Circuit Builder")
-        self.save("circuit.jpg")
-        self.show()
-    
-    def save(self, filename):
-        self._master_rect = self.scene.grScene.itemsBoundingRect()
-        print(self._master_rect)
-        self._master_rect.adjust(-20, -20, 20, 20)
-        print(self._master_rect)
-        width = int(self._master_rect.width())
-        height = int(self._master_rect.height())
         
-        image = QImage(width, height, QImage.Format_ARGB32_Premultiplied)
-        painter = QPainter(image)
-
-        # Render the region of interest to the QImage.
-        self.scene.grScene.render(painter, QRectF(image.rect()), self._master_rect)
-        painter.end()
-
-        # Save the image to a file.
-        image.save(filename)
         
 
 class QDMGraphicsView(QGraphicsView):
