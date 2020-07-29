@@ -20,7 +20,7 @@ class MainCircuitWindow(QMainWindow):
 		capture_action.setShortcut("Ctrl+S")
 		capture_action.setToolTip("Capture image of the circuit you have drawn")
 		capture_action.triggered.connect(self.captureCircuit)
-		
+		self.statusBar().showMessage("")
 		self.file_menu.addAction(capture_action)
 		
 		
@@ -41,8 +41,10 @@ class MainCircuitWindow(QMainWindow):
 			filename, filter = QFileDialog.getSaveFileName(self, "Save Circuit To Image")
 			self.file_name_image = filename
 			self.main_widget.scene.grScene.save(filename)
+			self.statusBar().showMessage("Saved Successfuly")
 		else:
 			self.main_widget.scene.grScene.save(self.file_name_image)
+			self.statusBar().showMessage("Saved Successfuly")
 		
     
         
