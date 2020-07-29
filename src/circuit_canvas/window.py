@@ -59,23 +59,7 @@ class Window(QWidget):
         self.save("circuit.jpg")
         self.show()
     
-    def save(self, filename):
-        self._master_rect = self.scene.grScene.itemsBoundingRect()
-        print(self._master_rect)
-        self._master_rect.adjust(-20, -20, 20, 20)
-        print(self._master_rect)
-        width = int(self._master_rect.width())
-        height = int(self._master_rect.height())
-        
-        image = QImage(width, height, QImage.Format_ARGB32_Premultiplied)
-        painter = QPainter(image)
-
-        # Render the region of interest to the QImage.
-        self.scene.grScene.render(painter, QRectF(image.rect()), self._master_rect)
-        painter.end()
-
-        # Save the image to a file.
-        image.save(filename)
+   
         
 
 class QDMGraphicsView(QGraphicsView):
