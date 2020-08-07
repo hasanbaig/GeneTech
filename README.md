@@ -14,12 +14,15 @@ GeneTech is written in python 3.
 Clone the up-to-date built from https://github.com/hasanbaig/GeneTech.git.
 
 ### Dependencies
-You need to install the libraries in (requirements.txt)[https://github.com/hasanbaig/GeneTech/blob/master/src/requirements.txt] to successfully run GeneTech. You can do it using the following command 
+You need to install the libraries in [requirements.txt](https://github.com/hasanbaig/GeneTech/blob/master/src/requirements.txt) to successfully run GeneTech. You can do it using the following command
+
 ``` pip3 install -r src/requirements.txt ```
 
 Once installed, run the Genetech.py as follows:
 
+
 ``` python src/Genetech.py ```
+
 
 ### Current Contributors
 1. Mudasir Hanif
