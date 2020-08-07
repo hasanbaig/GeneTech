@@ -9,22 +9,17 @@ GeneTech generates the circuits in the form of [SBOL data](https://sbolstandard.
 
 
 ### Platform
-GeneTech is a combination of Java and Python.
+GeneTech is written in python 3.
 
 Clone the up-to-date built from https://github.com/hasanbaig/GeneTech.git.
 
 ### Dependencies
-You need to install the following libraries before running the GeneTech on your system.
+You need to install the libraries in (requirements.txt)[https://github.com/hasanbaig/GeneTech/blob/master/src/requirements.txt] to successfully run GeneTech. You can do it using the following command 
+``` pip3 install -r src/requirements.txt ```
 
-* py4j
-* SchemDraw
-* pysbol
-* pyqt5
-* matplotlib
-* Pillow
-* dnaplotlib 
+Once installed, run the Genetech.py as follows:
 
-Once installed, run the Gateway.py file. 
+``` python src/Genetech.py ```
 
 ### Current Contributors
 1. Mudasir Hanif
