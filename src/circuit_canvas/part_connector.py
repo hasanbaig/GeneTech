@@ -8,6 +8,7 @@ LEFT_BOTTOM = 2
 RIGHT_TOP = 3
 RIGHT_BOTTOM = 4
 
+DEBUG = True 
 
 class Connector():
     def __init__(self, part, index=0, position=LEFT_TOP, total = 1):
@@ -16,16 +17,31 @@ class Connector():
         self.index = index
         self.position = position
 
-        self.grSocket = QDMGraphicsConnector(self.part.grNode)
+        self.grConnector = QDMGraphicsConnector(self)
 
-        self.grSocket.setPos(*self.part.getConnectorPosition(index, position, total))
+        self.grConnector.setPos(*self.part.getConnectorPosition(index, position, total))
+        
+        self.edge = None
 
+    def getConnectorPosition(self):
+        if DEBUG: print("  GSP: ", self.index, self.position, "part:", self.part)
+        res = self.part.getConnectorPosition(self.index, self.position)
+        if DEBUG: print("  res", res)
+        return res
+
+
+    def setConnectedEdge(self, edge=None):
+        self.edge = edge
+
+    def hasEdge(self):
+        return self.edge is not None
 
 
 
 class QDMGraphicsConnector(QGraphicsItem):
-    def __init__(self, parent=None):
-        super().__init__(parent)
+    def __init__(self, connector):
+        self.connector = connector
+        super().__init__(connector.part.grNode)
 
         self.radius = 6.0
         self.outline_width = 1.0

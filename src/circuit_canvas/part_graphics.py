@@ -31,6 +31,11 @@ class QDMGraphicsPart(QGraphicsItem):
         self.initContent()
         self.initUI()
 
+    def mouseMoveEvent(self, event):
+        super().mouseMoveEvent(event)
+        self.part.updateConnectedEdges()
+
+
     @property
     def title(self): return self._title
     @title.setter
@@ -44,7 +49,7 @@ class QDMGraphicsPart(QGraphicsItem):
             0,
             #2 * self.edge_size + self.width,
             #2 * self.edge_size + self.height
-			self.width,
+            self.width,
             self.height
         ).normalized()
 
