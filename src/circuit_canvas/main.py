@@ -6,7 +6,6 @@ from main_window import MainCircuitWindow
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    print("HELLOOOOOOOOOOOOOOOO")
     
     wnd = MainCircuitWindow()
 

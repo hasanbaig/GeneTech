@@ -4,6 +4,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from main_widget import MainScreenWidget
 
+mime_type = "application/x-item"
 
 class MainCircuitWindow(QMainWindow):
     def __init__(self):
@@ -12,6 +13,7 @@ class MainCircuitWindow(QMainWindow):
         self.name_company = 'GeneTech'
         self.name_product = 'Circuit Builder'
         self.initUI()
+        
         self.show()
         
     def initUI(self):                
@@ -78,7 +80,7 @@ class MainCircuitWindow(QMainWindow):
             print("here")
             subwnd = self.createMdiChild()
             subwnd.show()
-        except Exception as e: dumpException(e)
+        except Exception as e: print(e)
 
     
     def about(self):
@@ -157,7 +159,7 @@ class MainCircuitWindow(QMainWindow):
             self.circuit_builder.scene.grScene.save(self.file_name_image)
             self.statusBar().showMessage("Saved Successfuly")
         
-    
+
     def readSettings(self):
         settings = QSettings(self.name_company, self.name_product)
         pos = settings.value('pos', QPoint(200, 200))
@@ -170,6 +172,16 @@ class MainCircuitWindow(QMainWindow):
         settings.setValue('pos', self.pos())
         settings.setValue('size', self.size())
 
+
+
+
+input_gate = 0
+output_gate = 1
+AND_gate = 2
+OR_gate = 3
+NOT_gate = 4
+NAND_gate = 5
+NOR_gate = 6
 
 class MyDraggableBox(QListWidget):
     def __init__(self, parent=None):
@@ -186,11 +198,13 @@ class MyDraggableBox(QListWidget):
 
 
     def addMyItems(self):
-        self.addMyItem("AND", "AND.png")
-        self.addMyItem("NOR", "NOR.png")
-        self.addMyItem("NAND", "NAND.png")
-        self.addMyItem("NOT", "NOT.png")
-        self.addMyItem("OR", "OR.png")
+        self.addMyItem("AND", "AND.png", AND_gate)
+        self.addMyItem("NOR", "NOR.png", NOR_gate)
+        self.addMyItem("NAND", "NAND.png", NAND_gate)
+        self.addMyItem("NOT", "NOT.png", NOT_gate)
+        self.addMyItem("OR", "OR.png", OR_gate)
+        self.addMyItem("INPUT", "input.png", input_gate)
+        self.addMyItem("OUTPUT", "output.png", output_gate)		
 
     def addMyItem(self, name, icon=None, op_code=0):
         item = QListWidgetItem(name, self) # can be (icon, text, parent, <int>type)
@@ -203,3 +217,33 @@ class MyDraggableBox(QListWidget):
         # setup data
         item.setData(Qt.UserRole, pixmap)
         item.setData(Qt.UserRole + 1, op_code)
+    
+    
+    def startDrag(self, *args, **kwargs):
+        print("ListBox::startDrag")
+
+        try:
+            item = self.currentItem()
+            op_code = item.data(Qt.UserRole + 1)
+            print("dragging item <%d>" % op_code, item)
+
+            pixmap = QPixmap(item.data(Qt.UserRole))
+
+
+            itemData = QByteArray()
+            dataStream = QDataStream(itemData, QIODevice.WriteOnly)
+            dataStream << pixmap
+            dataStream.writeInt(op_code)
+            dataStream.writeQString(item.text())
+
+            mimeData = QMimeData()
+            mimeData.setData(mime_type, itemData)
+
+            drag = QDrag(self)
+            drag.setMimeData(mimeData)
+            drag.setHotSpot(QPoint(pixmap.width() / 2, pixmap.height() / 2))
+            drag.setPixmap(pixmap)
+
+            drag.exec_(Qt.MoveAction)
+
+        except Exception as e: print(e)

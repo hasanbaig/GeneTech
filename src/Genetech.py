@@ -80,8 +80,8 @@ class MainPage(QtWidgets.QMainWindow):
     
     #This function is to open the drawing canvas
     def DrawWindow(self):
-        circuit_builder = CircuitBuilder()
-        circuit_builder.show()
+        self.circuit_builder = CircuitBuilder()
+        self.circuit_builder.show()
         self.hide()
 
     # This funtion reads the txt which of circuits and returns a list

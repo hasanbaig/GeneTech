@@ -30,3 +30,9 @@ class CircuitScene:
     def removeEdge(self, edge):
         if edge in self.edges: self.edges.remove(edge)
         else: print("!W:", "Scene::removeEdge", "wanna remove edge", edge, "from self.edges but it's not in the list!")
+
+    def addDragEnterListener(self, callback):
+        self.grScene.views()[0].addDragEnterListener(callback)
+
+    def addDropListener(self, callback):
+        self.grScene.views()[0].addDropListener(callback)

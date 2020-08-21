@@ -5,7 +5,7 @@ import sys
  
 class CircuitBuilder(QMainWindow):
     def __init__(self, parent = None):
-        super(CircuitBuilder, self).__init__()
+        super().__init__()
         #Setting the logos for the window
         self.setWindowIcon(QIcon('SmallLogo.png'))
         
@@ -45,8 +45,8 @@ class CircuitBuilder(QMainWindow):
  
         self.setWindowTitle('GeneTech - CircuitBuilder');
         self.wid.setLayout(self.myLayout)
-        self.show()
- 
+        print("what")
+        
 if __name__ == "__main__":
     App = QApplication(sys.argv)
     window = CircuitBuilder()
