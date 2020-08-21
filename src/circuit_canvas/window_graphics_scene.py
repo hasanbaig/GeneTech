@@ -21,16 +21,20 @@ class QDMGraphicsScene(QGraphicsScene):
         self._pen_dark = QPen(self._color_dark)
         self._pen_dark.setWidth(2)
 
-#        self.scene_width, self.scene_height = 4000, 4000
- #       self.setSceneRect(-self.scene_width//2, -self.scene_height//2, self.scene_width, self.scene_height)
+#       self.scene_width, self.scene_height = 4000, 4000
+#       self.setSceneRect(-self.scene_width//2, -self.scene_height//2, self.scene_width, self.scene_height)
     
         self.setBackgroundBrush(QColor("#D3D3D3"))
 
+    
     def save(self, filename):
+        '''
+        To capture the entire circuit and save it at {filename}.
+        It does so by creating a master rect which is a boundary
+        containing all objects on the Graphic Scene.
+        '''
         self._master_rect = self.itemsBoundingRect()
-        print(self._master_rect)
         self._master_rect.adjust(-20, -20, 20, 20)
-        print(self._master_rect)
         width = int(self._master_rect.width())
         height = int(self._master_rect.height())
         
@@ -41,11 +45,15 @@ class QDMGraphicsScene(QGraphicsScene):
         self.render(painter, QRectF(image.rect()), self._master_rect)
         painter.end()
 
-        # Save the image to a file.
+        # Save the image to the speficied filename.
         image.save(filename)
     
     def setGrScene(self, width, height):
         self.setSceneRect(-width // 2, -height // 2, width, height)
+
+    # the drag events won't be allowed until dragMoveEvent is overriden
+    def dragMoveEvent(self, event):
+        pass
 
 
     def drawBackground(self, painter, rect):

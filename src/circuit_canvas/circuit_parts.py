@@ -1,16 +1,15 @@
-from part_graphics import QDMGraphicsPart
+from part_graphics import GraphicsPart
 from part_widget import PartWidget
 from part_connector import *
 
 class CircuitPart():
-    def __init__(self, scene, type = "OR Gate",  inputs=[], outputs=[]):
+    def __init__(self, scene, part_type = "OR Gate",  inputs=[], outputs=[]):
         self.scene = scene
 
-        self.title = type
+        self.title = part_type
+        self.part_gate = PartWidget(part_type.split()[0]) 
         
-        self.part_gate = PartWidget(type.split()[0]) 
-        
-        self.grNode = QDMGraphicsPart(self)
+        self.grNode = GraphicsPart(self)
 
         self.scene.addNode(self)
         self.scene.grScene.addItem(self.grNode)
@@ -30,7 +29,7 @@ class CircuitPart():
 
         counter = 0
         for item in outputs:
-            socket = Connector(part=self, index=counter, position=RIGHT_TOP, total = len(outputs))
+            connector = Connector(part=self, index=counter, position=RIGHT_TOP, total = len(outputs))
             counter += 1
             self.outputs.append(connector)
 
@@ -58,7 +57,7 @@ class CircuitPart():
         return [x, y]
 
     def updateConnectedEdges(self):
-        for socket in self.inputs + self.outputs:
-            if socket.hasEdge():
-                socket.edge.updatePositions()
+        for connector in self.inputs + self.outputs:
+            if connector.hasEdge():
+                connector.edge.updatePositions()
 

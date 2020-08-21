@@ -79,12 +79,12 @@ class Edge:
         source_pos = self.start_connector.getConnectorPosition()
         
         source_pos[0] += self.start_connector.part.grNode.pos().x()
-        source_pos[1] += self.start_connector.part.grNode.pos().y() + 20
+        source_pos[1] += self.start_connector.part.grNode.pos().y()
         self.grEdge.setSource(*source_pos)
         if self.end_connector is not None:
             end_pos = self.end_connector.getConnectorPosition()
             end_pos[0] += self.end_connector.part.grNode.pos().x()
-            end_pos[1] += self.end_connector.part.grNode.pos().y() + 20
+            end_pos[1] += self.end_connector.part.grNode.pos().y() 
             self.grEdge.setDestination(*end_pos)
         else:
             self.grEdge.setDestination(*source_pos)

@@ -4,7 +4,7 @@ from PyQt5.QtGui import *
 
 
 
-class QDMGraphicsPart(QGraphicsItem):
+class GraphicsPart(QGraphicsItem):
     def __init__(self, part, parent=None):
         super().__init__(parent)
         self.part = part
@@ -25,10 +25,7 @@ class QDMGraphicsPart(QGraphicsItem):
         self._brush_title = QBrush(QColor("#FF313131"))
         self._brush_background = QBrush(QColor("#E3212121"))
         self._brush_background_1 = QBrush(QColor("#00000000"))
-        self.initTitle()
-        self.title = self.part.title
-
-        self.initContent()
+        
         self.initUI()
 
     def mouseMoveEvent(self, event):
@@ -56,7 +53,13 @@ class QDMGraphicsPart(QGraphicsItem):
     def initUI(self):
         self.setFlag(QGraphicsItem.ItemIsSelectable)
         self.setFlag(QGraphicsItem.ItemIsMovable)
-    
+        self.setAcceptHoverEvents(True)
+        self.initTitle()
+        self.title = self.part.title
+        
+        
+        self.initContent()
+        
     def initContent(self):
         self.grContent = QGraphicsProxyWidget(self)
         self.part_gate.setGeometry(self.edge_size, self.title_height + self.edge_size,
