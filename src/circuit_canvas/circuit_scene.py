@@ -1,4 +1,4 @@
-from window_graphics_scene import QDMGraphicsScene
+from window_graphics_scene import MyGraphicsScene
 
 class CircuitScene:
     def __init__(self):
@@ -10,7 +10,7 @@ class CircuitScene:
         self.initUI()
 
     def initUI(self):
-        self.grScene = QDMGraphicsScene(self)
+        self.grScene = MyGraphicsScene(self)
         self.grScene.setGrScene(self.scene_width, self.scene_height)
 
     def addNode(self, part):

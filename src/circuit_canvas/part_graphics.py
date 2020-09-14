@@ -3,18 +3,17 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 
 
-
 class GraphicsPart(QGraphicsItem):
     def __init__(self, part, parent=None):
         super().__init__(parent)
         self.part = part
         self.part_gate = self.part.part_gate
         self._title_color = Qt.white
-        self._title_font = QFont("Ubuntu", 10)
+        self._title_font = QFont("Times",  11)
 
 
-        self.width = 110
-        self.height =  80
+        self.width = 120 
+        self.height =  80 if self.part_gate.is_gate else 40
         self.edge_size = 4.0
         self.title_height = 16.0
         self._padding = 4.0
@@ -38,35 +37,26 @@ class GraphicsPart(QGraphicsItem):
     @title.setter
     def title(self, value):
         self._title = value
-        self.title_item.setPlainText(self._title)
+        #self.title_item.setPlainText(self._title)
         
     def boundingRect(self):
-        return QRectF(
-            0,
-            0,
-            #2 * self.edge_size + self.width,
-            #2 * self.edge_size + self.height
-            self.width,
-            self.height
-        ).normalized()
+        return QRectF(0, 0, self.width, self.height).normalized()
 
     def initUI(self):
         self.setFlag(QGraphicsItem.ItemIsSelectable)
         self.setFlag(QGraphicsItem.ItemIsMovable)
         self.setAcceptHoverEvents(True)
-        self.initTitle()
+        #self.initTitle()
         self.title = self.part.title
-        
-        
         self.initContent()
         
     def initContent(self):
+    
         self.grContent = QGraphicsProxyWidget(self)
-        self.part_gate.setGeometry(self.edge_size, self.title_height + self.edge_size,
-                                 self.width - 2*self.edge_size, self.height - 2*self.edge_size-self.title_height)
+        self.part_gate.setGeometry(0, 0, self.width, self.height)
         self.grContent.setWidget(self.part_gate)
 
-
+    '''
     def initTitle(self):
         self.title_item = QGraphicsTextItem(self)
         self.title_item.setDefaultTextColor(self._title_color)
@@ -76,13 +66,13 @@ class GraphicsPart(QGraphicsItem):
             self.width
             - 2 * self._padding
         )
-
-
+    '''
 
 
     def paint(self, painter, QStyleOptionGraphicsItem, widget=None):
+        '''
         # title
-
+        
         path_title = QPainterPath()
         path_title.setFillRule(Qt.WindingFill)
         path_title.addRoundedRect(0,0, self.width, self.title_height, self.edge_size, self.edge_size)
@@ -91,7 +81,7 @@ class GraphicsPart(QGraphicsItem):
         painter.setPen(Qt.NoPen)
         painter.setBrush(self._brush_title)
         painter.drawPath(path_title.simplified())
-
+        '''
 
         # content
         path_content = QPainterPath()
@@ -100,15 +90,14 @@ class GraphicsPart(QGraphicsItem):
         path_content.addRect(0, self.title_height, self.edge_size, self.edge_size)
         path_content.addRect(self.width - self.edge_size, self.title_height, self.edge_size, self.edge_size)
         painter.setPen(Qt.NoPen)
-        painter.setBrush(self._brush_background)
+        painter.setBrush(Qt.NoBrush)
         painter.drawPath(path_content.simplified())
-
-
+    
         # outline
        
         path_outline = QPainterPath()
         path_outline.addRoundedRect(0, 0, self.width, self.height, self.edge_size, self.edge_size)
         painter.setPen(self._pen_default if not self.isSelected() else self._pen_selected)
-        painter.setBrush(self._brush_background_1)
+        painter.setBrush(Qt.NoBrush)
         painter.drawPath(path_outline.simplified())
-       
+        

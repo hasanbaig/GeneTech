@@ -3,32 +3,25 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
 
-LEFT_TOP = 1
-LEFT_BOTTOM = 2
-RIGHT_TOP = 3
-RIGHT_BOTTOM = 4
 
-DEBUG = True 
+DEBUG = True
 
 class Connector():
-    def __init__(self, part, index=0, position=LEFT_TOP, total = 1):
+    def __init__(self, part, index=0, total = 1, is_left = True, input_output = False):
 
         self.part = part
+        self.total = total
         self.index = index
-        self.position = position
-
+        self.is_left = is_left
+        self.input_output = input_output
         self.grConnector = QDMGraphicsConnector(self)
 
-        self.grConnector.setPos(*self.part.getConnectorPosition(index, position, total))
-        
+        self.grConnector.setPos(*self.part.getConnectorPosition(index, total, left = self.is_left, input_output = self.input_output))
+
         self.edge = None
 
     def getConnectorPosition(self):
-        if DEBUG: print("  GSP: ", self.index, self.position, "part:", self.part)
-        res = self.part.getConnectorPosition(self.index, self.position)
-        if DEBUG: print("  res", res)
-        return res
-
+        return self.part.getConnectorPosition(self.index, self.total, self.is_left, self.input_output)
 
     def setConnectedEdge(self, edge=None):
         self.edge = edge
@@ -45,7 +38,7 @@ class QDMGraphicsConnector(QGraphicsItem):
 
         self.radius = 6.0
         self.outline_width = 1.0
-        self._color_background = QColor("#FFFF7700")
+        self._color_background = QColor("#4C000000")
         self._color_outline = QColor("#FF000000")
 
         self._pen = QPen(self._color_outline)

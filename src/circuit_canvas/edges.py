@@ -44,10 +44,10 @@ class QDMGraphicsEdgeBezier(QDMGraphicsEdge):
         dist = (d[0] - s[0]) * 0.5
         cpx_s, cpx_d = dist, -dist
         cpy_s, cpy_d = 0, 0 
-        ss_pos = self.edge.start_connector.position
+        is_left = self.edge.start_connector.is_left
         
-        if (s[0] > d[0] and ss_pos in (RIGHT_TOP, RIGHT_BOTTOM)) \
-            or (s[0] > d[0] and ss_pos in (LEFT_BOTTOM, LEFT_TOP)):
+        if (s[0] > d[0] and not is_left) \
+            or (s[0] > d[0] and is_left):
             cpx_d *= -1
             cpx_s *= -1
         path = QPainterPath(QPointF(self.posSource[0], self.posSource[1]))
