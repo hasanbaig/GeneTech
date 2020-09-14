@@ -1,0 +1,4 @@
+c'(ab+b')
+4
+(c+(b'+a)')'
+(Arabinose+(aTc'+IPTG)')'
