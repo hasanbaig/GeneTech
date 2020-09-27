@@ -2,7 +2,6 @@ import os
 import sys
 import time
 from PIL import Image
-#import Gateway as g
 import SBOL_File as sbol
 import Logical_Representation as logic
 import SBOL_visual as visual

@@ -1,8 +1,8 @@
+IPTG'.aTc'.Arabinose'+IPTG.aTc'.Arabinose'+IPTG.aTc.Arabinose'
+
 IPTG.aTc.Arabinose'+IPTG'.aTc.Arabinose'+IPTG.aTc'.Arabinose'
 aTc.Ara' + aTc'.Ara'.IP
 Ara'(aTc + aTc'.IP)
-
-
 
 (IPTG+aTc+Arabinose').(IPTG'+aTc'+Arabinose').(IPTG+aTc'+Arabinose).(IPTG+aTc'+Arabinose')
 

@@ -6,3 +6,19 @@ PTet-> (AmtR) ----|PAmtR-> PTac-> (HlYllR) ----|PHlYllR-> PBad-> (BM3R1) ----|PB
 
 PTet-> (AmtR) ----|PAmtR-> PTac-> (HlYllR) ----|PHlYllR-> PBad-> (SrpR) ----|PSrpR-> (YFP)
 
+******************* Genetic Circuit 3 *****************
+
+PTet-> (AmtR) ----|PAmtR-> PTac-> (HlYllR) ----|PHlYllR-> PBad-> (BM3R1) ----|PBM3R1-> (YFP)
+
+******************* Genetic Circuit 4 *****************
+
+PTet-> (AmtR) ----|PAmtR-> PTac-> (HlYllR) ----|PHlYllR-> PBad-> (SrpR) ----|PSrpR-> (YFP)
+
+******************* Genetic Circuit 5 *****************
+
+PTet-> (AmtR) ----|PAmtR-> PTac-> (HlYllR) ----|PHlYllR-> PBad-> (BM3R1) ----|PBM3R1-> (YFP)
+
+******************* Genetic Circuit 6 *****************
+
+PTet-> (AmtR) ----|PAmtR-> PTac-> (HlYllR) ----|PHlYllR-> PBad-> (SrpR) ----|PSrpR-> (YFP)
+

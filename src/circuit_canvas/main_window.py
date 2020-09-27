@@ -64,6 +64,7 @@ class CircuitBuilder(QMainWindow):
             event.ignore()
         else:
             self.writeSettings()
+            self.main_window.show()
             event.accept()
 
     def updateMenus(self):

@@ -1,0 +1,1488 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:sbol="http://sbols.org/v2#" xmlns:ns0="http://purl.org/dc/terms/">
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/ECK120033737_sequence/1">
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737_sequence"/>
+    <sbol:displayId>ECK120033737_sequence</sbol:displayId>
+    <sbol:elements>ggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaagg</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/B1_sequence/1">
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/B1_sequence"/>
+    <sbol:displayId>B1_sequence</sbol:displayId>
+    <sbol:elements>CTATGGACTATGTTTTAACTACTAG</sbol:elements>
+    <sbol:version>1</sbol:version>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/PBad_sequence/1">
+    <sbol:version>1</sbol:version>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:displayId>PBad_sequence</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PBad_sequence"/>
+    <sbol:elements>ACTTTTCATACTCCCGCCATTCAGAGAAGAAACCAATTGTCCATATTGCATCAGACATTGCCGTCACTGCGTCTTTTACTGGCTCTTCTCGCTAACCAAACCGGTAACCCCGCTTATTAAAAGCATTCTGTAACAAAGCGGGACCAAAGCCATGACAAAAACGCGTAACAAAAGTGTCTATAATCACGGCAGAAAAGTCCACATTGATTATTTGCACGGCGTCACACTTTGCTATGCCATAGCATTTTTATCCATAAGATTAGCGGATCCTACCTGACGCTTTTTATCGCAACTCTCTACTGTTTCTCCATACCCGTTTTTTTGGGCTAGC</sbol:elements>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3_seq/1">
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3_seq"/>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:elements>TACTCCACCGTTGGCTTTTTTCCCTATCAGTGATAGAGATTGACATCCCTATCAGTGATAGAGATAATGAGCACAATGTTCCCTAATAATCAGCAAAGAGGTTACTAGATGGCAGGCGCAGTTGGTCGTCCGCGTCGTAGTGCACCGCGTCGTGCAGGTAAAAATCCGCGTGAAGAAATTCTGGATGCAAGCGCAGAACTGTTTACCCGTCAGGGTTTTGCAACCACCAGTACCCATCAGATTGCAGATGCAGTTGGTATTCGTCAGGCAAGCCTGTATTATCATTTTCCGAGCAAAACCGAAATCTTTCTGACCCTGCTGAAAAGCACCGTTGAACCGAGCACCGTTCTGGCAGAAGATCTGAGCACCCTGGATGCAGGTCCGGAAATGCGTCTGTGGGCAATTGTTGCAAGCGAAGTTCGTCTGCTGCTGAGCACCAAATGGAATGTTGGTCGTCTGTATCAGCTGCCGATTGTTGGTAGCGAAGAATTTGCAGAATATCATAGCCAGCGTGAAGCACTGACCAATGTTTTTCGTGATCTGGCAACCGAAATTGTTGGTGATGATCCGCGTGCAGAACTGCCGTTTCATATTACCATGAGCGTTATTGAAATGCGTCGCAATGATGGTAAAATTCCGAGTCCGCTGAGCGCAGATAGCCTGCCGGAAACCGCAATTATGCTGGCAGATGCAAGCCTGGCAGTTCTGGGTGCACCGCTGCCTGCAGATCGTGTTGAAAAAACCCTGGAACTGATTAAACAGGCAGATGCAAAATAAggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaaggCTTGTCCAACCAAATGATTCGTTACCAATTGACAGTTTCTATCGATCTATAGATAATGCTAGCAACGATCGTTGGCTGTGTTGACAATTAATCATCGGCTCGTATAATGTGTGGAATTGTGAGCGCTCACAATTACCCCCGAGATGAAATACATCCTGTTTGAGGTGTGCGAAATGGGTAAAAGCCGTGAACAGACCATGGAAAATATTCTGAAAGCAGCCAAAAAGAAATTCGGCGAACGTGGTTATGAAGGCACCAGCATTCAAGAAATTACCAAAGAAGCCAAAGTTAACGTTGCAATGGCCAGCTATTACTTTAATGGCAAAGAGAACCTGTACTACGAGGTGTTCAAAAAATACGGTCTGGCAAATGAACTGCCGAACTTTCTGGAAAAAAACCAGTTTAATCCGATTAATGCCCTGCGTGAATATCTGACCGTTTTTACCACCCACATTAAAGAAAATCCGGAAATTGGCACCCTGGCCTATGAAGAAATTATCAAAGAAAGCGCACGCCTGGAAAAAATCAAACCGTATTTTATCGGCAGCTTCGAACAGCTGAAAGAAATTCTGCAAGAGGGTGAAAAACAGGGTGTGTTTCACTTTTTTAGCATCAACCATACCATCCATTGGATTACCAGCATTGTTCTGTTTCCGAAATTCAAAAAATTCATCGATAGCCTGGGTCCGAATGAAACCAATGATACCAATCATGAATGGATGCCGGAAGATCTGGTTAGCCGTATTATTAGCGCACTGACCGATAAACCGAACATTTAAggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaaggACCAGGAATCTGAACGATTCGTTACCAATTGACATATTTAAAATTCTTGTTTAAAatgctagcACTTTTCATACTCCCGCCATTCAGAGAAGAAACCAATTGTCCATATTGCATCAGACATTGCCGTCACTGCGTCTTTTACTGGCTCTTCTCGCTAACCAAACCGGTAACCCCGCTTATTAAAAGCATTCTGTAACAAAGCGGGACCAAAGCCATGACAAAAACGCGTAACAAAAGTGTCTATAATCACGGCAGAAAAGTCCACATTGATTATTTGCACGGCGTCACACTTTGCTATGCCATAGCATTTTTATCCATAAGATTAGCGGATCCTACCTGACGCTTTTTATCGCAACTCTCTACTGTTTCTCCATACCCGTTTTTTTGGGCTAGCCTATGGACTATGTTTTAACTACTAGATGGAAAGCACCCCGACCAAACAGAAAGCAATTTTTAGCGCAAGCCTGCTGCTGTTTGCAGAACGTGGTTTTGATGCAACCACCATGCCGATGATTGCAGAAAATGCAAAAGTTGGTGCAGGCACCATTTATCGCTATTTCAAAAACAAAGAAAGCCTGGTGAACGAACTGTTTCAGCAGCATGTTAATGAATTTCTGCAGTGTATTGAAAGCGGTCTGGCAAATGAACGTGATGGTTATCGTGATGGCTTTCATCACATTTTTGAAGGTATGGTGACCTTTACCAAAAATCATCCGCGTGCACTGGGTTTTATCAAAACCCATAGCCAGGGCACCTTTCTGACCGAAGAAAGCCGTCTGGCATATCAGAAACTGGTTGAATTTGTGTGCACCTTTTTTCGTGAAGGTCAGAAACAGGGTGTGATTCGTAATCTGCCGGAAAATGCACTGATTGCAATTCTGTTTGGCAGCTTTATGGAAGTGTATGAAATGATCGAGAACGATTATCTGAGCCTGACCGATGAACTGCTGACCGGTGTTGAAGAAAGCCTGTGGGCAGCACTGAGCCGTCAGAGCTAAggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaaggAATCCGCGTGATAGGTCTGATTCGTTACCAATTGACGGAATGAACGTTCATTCCGATAATGCTAGCCTGAAGCTGTCACCGGATGTGCTTTCCGGTCTGATGAGTCCGTGAGGACGAAACAGCCTCTACAAATAATTTTGTTTAATACTAGAGAAAGAGGGGAAATACTAGATGGTGAGCAAGGGCGAGGAGCTGTTCACCGGGGTGGTGCCCATCCTGGTCGAGCTGGACGGCGACGTAAACGGCCACAAGTTCAGCGTGTCCGGCGAGGGCGAGGGCGATGCCACCTACGGCAAGCTGACCCTGAAGTTCATCTGCACCACAGGCAAGCTGCCCGTGCCCTGGCCCACCCTCGTGACCACCTTCGGCTACGGCCTGCAATGCTTCGCCCGCTACCCCGACCACATGAAGCTGCACGACTTCTTCAAGTCCGCCATGCCCGAAGGCTACGTCCAGGAGCGCACCATCTTCTTCAAGGACGACGGCAACTACAAGACCCGCGCCGAGGTGAAGTTCGAGGGCGACACCCTGGTGAACCGCATCGAGCTGAAGGGCATCGACTTCAAGGAGGACGGCAACATCCTGGGGCACAAGCTGGAGTACAACTACAACAGCCACAACGTCTATATCATGGCCGACAAGCAGAAGAACGGCATCAAGGTGAACTTCAAGATCCGCCACAACATCGAGGACGGCAGCGTGCAGCTCGCCGACCACTACCAGCAGAACACCCCAATCGGCGACGGCCCCGTGCTGCTGCCCGACAACCACTACCTTAGCTACCAGTCCGCCCTGAGCAAAGACCCCAACGAGAAGCGCGATCACATGGTCCTGCTGGAGTTCGTGACCGCCGCCGGGATCACTCTCGGCATGGACGAGCTGTACAAGTAACTCGGTACCAAATTCCAGAAAAGAGGCCTCCCGAAAGGGGGGCCTTTTTTCGTTTTGGTCCggaaacacagAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTcgaccaaagg</sbol:elements>
+    <sbol:displayId>Output_Device_3_seq</sbol:displayId>
+    <sbol:version>1</sbol:version>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/AmtR/1">
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/AmtR_sequence/1"/>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/AmtR"/>
+    <sbol:displayId>AmtR</sbol:displayId>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/PBad/1">
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/PBad_sequence/1"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PBad"/>
+    <sbol:displayId>PBad</sbol:displayId>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/YFP_Protein/1">
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/YFP_Protein"/>
+    <sbol:displayId>YFP_Protein</sbol:displayId>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/H1_sequence/1">
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/H1_sequence"/>
+    <sbol:displayId>H1_sequence</sbol:displayId>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:elements>ACCCCCGAG</sbol:elements>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/BM3R1_sequence/1">
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/BM3R1_sequence"/>
+    <sbol:elements>ATGGAAAGCACCCCGACCAAACAGAAAGCAATTTTTAGCGCAAGCCTGCTGCTGTTTGCAGAACGTGGTTTTGATGCAACCACCATGCCGATGATTGCAGAAAATGCAAAAGTTGGTGCAGGCACCATTTATCGCTATTTCAAAAACAAAGAAAGCCTGGTGAACGAACTGTTTCAGCAGCATGTTAATGAATTTCTGCAGTGTATTGAAAGCGGTCTGGCAAATGAACGTGATGGTTATCGTGATGGCTTTCATCACATTTTTGAAGGTATGGTGACCTTTACCAAAAATCATCCGCGTGCACTGGGTTTTATCAAAACCCATAGCCAGGGCACCTTTCTGACCGAAGAAAGCCGTCTGGCATATCAGAAACTGGTTGAATTTGTGTGCACCTTTTTTCGTGAAGGTCAGAAACAGGGTGTGATTCGTAATCTGCCGGAAAATGCACTGATTGCAATTCTGTTTGGCAGCTTTATGGAAGTGTATGAAATGATCGAGAACGATTATCTGAGCCTGACCGATGAACTGCTGACCGGTGTTGAAGAAAGCCTGTGGGCAGCACTGAGCCGTCAGAGCTAA</sbol:elements>
+    <sbol:version>1</sbol:version>
+    <sbol:displayId>BM3R1_sequence</sbol:displayId>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/ECK120033737__3/1">
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__3"/>
+    <sbol:displayId>ECK120033737__3</sbol:displayId>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737_sequence/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/ECK120033737__2/1">
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737_sequence/1"/>
+    <sbol:displayId>ECK120033737__2</sbol:displayId>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__2"/>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/1">
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_0"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>ECK120033737__2_0</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__2/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_0"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PHlYllR/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>PHlYllR_0</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_annotation_0/1">
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_annotation_0/BM3R1_annotation_0_range/1">
+            <sbol:version>1</sbol:version>
+            <sbol:displayId>BM3R1_annotation_0_range</sbol:displayId>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_annotation_0/BM3R1_annotation_0_range"/>
+            <sbol:start>2090</sbol:start>
+            <sbol:end>2668</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_annotation_0"/>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_0/1"/>
+        <sbol:displayId>BM3R1_annotation_0</sbol:displayId>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_annotation_0/1">
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_0/1"/>
+        <sbol:displayId>ECK120033737__4_annotation_0</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_annotation_0/ECK120033737__4_annotation_0_range/1">
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_annotation_0/ECK120033737__4_annotation_0_range"/>
+            <sbol:version>1</sbol:version>
+            <sbol:displayId>ECK120033737__4_annotation_0_range</sbol:displayId>
+            <sbol:end>3734</sbol:end>
+            <sbol:start>3678</sbol:start>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_annotation_0"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_11/1">
+        <sbol:version>1</sbol:version>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_0/1"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_0/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_11"/>
+        <sbol:displayId>constraint_11</sbol:displayId>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_Protein/1">
+        <sbol:displayId>YFP_Protein</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_Protein"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/YFP_Protein/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_1/1">
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>constraint_1</sbol:displayId>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_0/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_0"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__3/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:displayId>ECK120033737__3_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_component/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_component"/>
+        <sbol:displayId>YFP_component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/YFP/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_component/1">
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_component"/>
+        <sbol:displayId>AmtR_component</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/AmtR/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_0/1">
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__1/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_0"/>
+        <sbol:displayId>ECK120033737__1_0</sbol:displayId>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_precedes_ECK120033737__2/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_precedes_ECK120033737__2"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>HlYllR_precedes_ECK120033737__2</sbol:displayId>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_component/1"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/A1_annotation_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_annotation_0"/>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_0/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/A1_annotation_0/A1_annotation_0_range/1">
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_annotation_0/A1_annotation_0_range"/>
+            <sbol:end>108</sbol:end>
+            <sbol:start>75</sbol:start>
+            <sbol:displayId>A1_annotation_0_range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>A1_annotation_0</sbol:displayId>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/A1_0/1">
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>A1_0</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/A1/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_9/1">
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_0/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:displayId>constraint_9</sbol:displayId>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_0/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_9"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_0/1">
+        <sbol:version>1</sbol:version>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/HlYllR/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_0"/>
+        <sbol:displayId>HlYllR_0</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_precedes_ECK120033737__1/1">
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_component/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>AmtR_precedes_ECK120033737__1</sbol:displayId>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_component/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_precedes_ECK120033737__1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/A1_component/1">
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_component"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/A1/1"/>
+        <sbol:displayId>A1_component</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_precedes_B1/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_precedes_B1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_component/1"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_component/1"/>
+        <sbol:displayId>PBad_precedes_B1</sbol:displayId>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:version>1</sbol:version>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_annotation_0/1">
+        <sbol:displayId>YFP_annotation_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_0/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_annotation_0/YFP_annotation_0_range/1">
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:start>2792</sbol:start>
+            <sbol:end>3677</sbol:end>
+            <sbol:version>1</sbol:version>
+            <sbol:displayId>YFP_annotation_0_range</sbol:displayId>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_annotation_0/YFP_annotation_0_range"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_annotation_0"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_annotation_0/1">
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_annotation_0/ECK120033737__3_annotation_0_range/1">
+            <sbol:end>2725</sbol:end>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_annotation_0/ECK120033737__3_annotation_0_range"/>
+            <sbol:displayId>ECK120033737__3_annotation_0_range</sbol:displayId>
+            <sbol:start>2669</sbol:start>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:version>1</sbol:version>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_annotation_0"/>
+        <sbol:displayId>ECK120033737__3_annotation_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/H1_annotation_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_annotation_0"/>
+        <sbol:displayId>H1_annotation_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/H1_annotation_0/H1_annotation_0_range/1">
+            <sbol:version>1</sbol:version>
+            <sbol:displayId>H1_annotation_0_range</sbol:displayId>
+            <sbol:end>977</sbol:end>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_annotation_0/H1_annotation_0_range"/>
+            <sbol:start>969</sbol:start>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_0/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_precedes_PHlYllR/1">
+        <sbol:version>1</sbol:version>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_component/1"/>
+        <sbol:displayId>ECK120033737__2_precedes_PHlYllR</sbol:displayId>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_component/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_precedes_PHlYllR"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_component/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_component"/>
+        <sbol:version>1</sbol:version>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/BM3R1/1"/>
+        <sbol:displayId>BM3R1_component</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/B1_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>B1_0</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/B1/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_0"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/B1_component/1">
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/B1/1"/>
+        <sbol:displayId>B1_component</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_component"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_precedes_ECK120033737__3/1">
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:displayId>BM3R1_precedes_ECK120033737__3</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_precedes_ECK120033737__3"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_15/1">
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_0/1"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_0/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_15"/>
+        <sbol:displayId>constraint_15</sbol:displayId>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_component/1">
+        <sbol:version>1</sbol:version>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__2/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_component"/>
+        <sbol:displayId>ECK120033737__2_component</sbol:displayId>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/H1_component/1">
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>H1_component</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_component"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/H1/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_14/1">
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_0/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>constraint_14</sbol:displayId>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_14"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_annotation_0/1">
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_0/1"/>
+        <sbol:displayId>HlYllR_annotation_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_annotation_0/HlYllR_annotation_0_range/1">
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:displayId>HlYllR_annotation_0_range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:end>1613</sbol:end>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_annotation_0/HlYllR_annotation_0_range"/>
+            <sbol:start>978</sbol:start>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_annotation_0"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <ns0:title>Output_Device 3 Component</ns0:title>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_5/1">
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_0/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_5"/>
+        <sbol:displayId>constraint_5</sbol:displayId>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_annotation_0/1">
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_annotation_0"/>
+        <sbol:displayId>ECK120033737__1_annotation_0</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_annotation_0/ECK120033737__1_annotation_0_range/1">
+            <sbol:displayId>ECK120033737__1_annotation_0_range</sbol:displayId>
+            <sbol:start>778</sbol:start>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_annotation_0/ECK120033737__1_annotation_0_range"/>
+            <sbol:end>834</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:version>1</sbol:version>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_0/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_precedes_PAmtR/1">
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_component/1"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_component/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>ECK120033737__1_precedes_PAmtR</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_precedes_PAmtR"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_component/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:displayId>ECK120033737__1_component</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__1/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_component"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_annotation_0/1">
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_0/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_annotation_0/PTac_annotation_0_range/1">
+            <sbol:end>968</sbol:end>
+            <sbol:start>898</sbol:start>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_annotation_0/PTac_annotation_0_range"/>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:version>1</sbol:version>
+            <sbol:displayId>PTac_annotation_0_range</sbol:displayId>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:displayId>PTac_annotation_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_annotation_0"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_precedes_A1/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_precedes_A1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:displayId>PTet_precedes_A1</sbol:displayId>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_0/1">
+        <sbol:displayId>PBad_0</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PBad/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_0/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PTet/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_0"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>PTet_0</sbol:displayId>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/B1_precedes_BM3R1/1">
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>B1_precedes_BM3R1</sbol:displayId>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_precedes_BM3R1"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_component/1"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_3/1">
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_3"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:displayId>constraint_3</sbol:displayId>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_0/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_precedes_PBM3R1/1">
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_component/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_component/1"/>
+        <sbol:displayId>ECK120033737__3_precedes_PBM3R1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_precedes_PBM3R1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_component/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_component"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PAmtR/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>PAmtR_component</sbol:displayId>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/YFP/1"/>
+        <sbol:displayId>YFP_0</sbol:displayId>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_4/1">
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_0/1"/>
+        <sbol:displayId>constraint_4</sbol:displayId>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_4"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_precedes_H1/1">
+        <sbol:displayId>PTac_precedes_H1</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_component/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_precedes_H1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_annotation_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_annotation_0"/>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_annotation_0/PTet_annotation_0_range/1">
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_annotation_0/PTet_annotation_0_range"/>
+            <sbol:end>74</sbol:end>
+            <sbol:start>1</sbol:start>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:displayId>PTet_annotation_0_range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_0/1"/>
+        <sbol:displayId>PTet_annotation_0</sbol:displayId>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_annotation_0/1">
+        <sbol:version>1</sbol:version>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_annotation_0"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_annotation_0/PAmtR_annotation_0_range/1">
+            <sbol:displayId>PAmtR_annotation_0_range</sbol:displayId>
+            <sbol:start>835</sbol:start>
+            <sbol:end>897</sbol:end>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_annotation_0/PAmtR_annotation_0_range"/>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:version>1</sbol:version>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:displayId>PAmtR_annotation_0</sbol:displayId>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_annotation_0/1">
+        <sbol:displayId>AmtR_annotation_0</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_annotation_0/AmtR_annotation_0_range/1">
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_annotation_0/AmtR_annotation_0_range"/>
+            <sbol:start>109</sbol:start>
+            <sbol:end>777</sbol:end>
+            <sbol:displayId>AmtR_annotation_0_range</sbol:displayId>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:version>1</sbol:version>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_annotation_0"/>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_0/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_precedes_PBad/1">
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:version>1</sbol:version>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_component/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_precedes_PBad"/>
+        <sbol:displayId>PHlYllR_precedes_PBad</sbol:displayId>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_0/1">
+        <sbol:displayId>ECK120033737__4_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_0"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__4/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_2/1">
+        <sbol:version>1</sbol:version>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_0/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__1_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_2"/>
+        <sbol:displayId>constraint_2</sbol:displayId>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_0/1">
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_0/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_0"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_0/1"/>
+        <sbol:displayId>constraint_0</sbol:displayId>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_6/1">
+        <sbol:displayId>constraint_6</sbol:displayId>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_0/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_6"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_component/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_component"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>HlYllR_component</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/HlYllR/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_component/1">
+        <sbol:displayId>PBM3R1_component</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PBM3R1/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_component"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_annotation_0/1">
+        <sbol:displayId>PHlYllR_annotation_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_0/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_annotation_0/PHlYllR_annotation_0_range/1">
+            <sbol:start>1671</sbol:start>
+            <sbol:end>1733</sbol:end>
+            <sbol:displayId>PHlYllR_annotation_0_range</sbol:displayId>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:version>1</sbol:version>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_annotation_0/PHlYllR_annotation_0_range"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_annotation_0"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_annotation_0/1">
+        <sbol:displayId>PBM3R1_annotation_0</sbol:displayId>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_annotation_0"/>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_annotation_0/PBM3R1_annotation_0_range/1">
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_annotation_0/PBM3R1_annotation_0_range"/>
+            <sbol:start>2726</sbol:start>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:end>2791</sbol:end>
+            <sbol:version>1</sbol:version>
+            <sbol:displayId>PBM3R1_annotation_0_range</sbol:displayId>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/B1_annotation_0/1">
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/B1_annotation_0/B1_annotation_0_range/1">
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_annotation_0/B1_annotation_0_range"/>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:displayId>B1_annotation_0_range</sbol:displayId>
+            <sbol:start>2065</sbol:start>
+            <sbol:version>1</sbol:version>
+            <sbol:end>2089</sbol:end>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:version>1</sbol:version>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_annotation_0"/>
+        <sbol:displayId>B1_annotation_0</sbol:displayId>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_precedes_YFP/1">
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_component/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_precedes_YFP"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:displayId>PBM3R1_precedes_YFP</sbol:displayId>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_0/1">
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PTac/1"/>
+        <sbol:displayId>PTac_0</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_0"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_component/1">
+        <sbol:displayId>PHlYllR_component</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PHlYllR/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_component"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/H1_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_0"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/H1/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>H1_0</sbol:displayId>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_0/1">
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/AmtR/1"/>
+        <sbol:displayId>AmtR_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_0"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_component/1">
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PBad/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_component"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>PBad_component</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_component/1">
+        <sbol:displayId>PTac_component</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PTac/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_component"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_8/1">
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_0/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_8"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>constraint_8</sbol:displayId>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_0/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/A1_precedes_AmtR/1">
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_precedes_AmtR"/>
+        <sbol:version>1</sbol:version>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/A1_component/1"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_component/1"/>
+        <sbol:displayId>A1_precedes_AmtR</sbol:displayId>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_component/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>PTet_component</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PTet/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTet_component"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_0/1">
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PAmtR/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_0"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>PAmtR_0</sbol:displayId>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_precedes_ECK120033737__4/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_precedes_ECK120033737__4"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_component/1"/>
+        <sbol:displayId>YFP_precedes_ECK120033737__4</sbol:displayId>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/H1_precedes_HlYllR/1">
+        <sbol:displayId>H1_precedes_HlYllR</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_precedes_HlYllR"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/H1_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_component/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_0/1">
+        <sbol:version>1</sbol:version>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/BM3R1/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:displayId>BM3R1_0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_0"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3_seq/1"/>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_0/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_0"/>
+        <sbol:displayId>PBM3R1_0</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PBM3R1/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_precedes_PTac/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_precedes_PTac"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>PAmtR_precedes_PTac</sbol:displayId>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_component/1"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PTac_component/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_7/1">
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_0/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_0/1"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_7"/>
+        <sbol:displayId>constraint_7</sbol:displayId>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_annotation_0/1">
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_annotation_0/PBad_annotation_0_range/1">
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+            <sbol:end>2064</sbol:end>
+            <sbol:version>1</sbol:version>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_annotation_0/PBad_annotation_0_range"/>
+            <sbol:start>1734</sbol:start>
+            <sbol:displayId>PBad_annotation_0_range</sbol:displayId>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:displayId>PBad_annotation_0</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_annotation_0"/>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_0/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_10/1">
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>constraint_10</sbol:displayId>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/B1_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_10"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBad_0/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_component/1">
+        <sbol:displayId>ECK120033737__4_component</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__4/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__4_component"/>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_component/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:displayId>ECK120033737__3_component</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__3/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_component"/>
+        <sbol:version>1</sbol:version>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_annotation_0/1">
+        <sbol:displayId>ECK120033737__2_annotation_0</sbol:displayId>
+        <sbol:component rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_0/1"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_annotation_0/ECK120033737__2_annotation_0_range/1">
+            <sbol:version>1</sbol:version>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_annotation_0/ECK120033737__2_annotation_0_range"/>
+            <sbol:start>1614</sbol:start>
+            <sbol:displayId>ECK120033737__2_annotation_0_range</sbol:displayId>
+            <sbol:end>1670</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__2_annotation_0"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_12/1">
+        <sbol:displayId>constraint_12</sbol:displayId>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_0/1"/>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_12"/>
+        <sbol:version>1</sbol:version>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:displayId>Output_Device_3</sbol:displayId>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_13/1">
+        <sbol:displayId>constraint_13</sbol:displayId>
+        <sbol:subject rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/ECK120033737__3_0/1"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/constraint_13"/>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:version>1</sbol:version>
+        <sbol:object rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_0/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/YFP_sequence/1">
+    <sbol:version>1</sbol:version>
+    <sbol:displayId>YFP_sequence</sbol:displayId>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/YFP_sequence"/>
+    <sbol:elements>CTGAAGCTGTCACCGGATGTGCTTTCCGGTCTGATGAGTCCGTGAGGACGAAACAGCCTCTACAAATAATTTTGTTTAATACTAGAGAAAGAGGGGAAATACTAGATGGTGAGCAAGGGCGAGGAGCTGTTCACCGGGGTGGTGCCCATCCTGGTCGAGCTGGACGGCGACGTAAACGGCCACAAGTTCAGCGTGTCCGGCGAGGGCGAGGGCGATGCCACCTACGGCAAGCTGACCCTGAAGTTCATCTGCACCACAGGCAAGCTGCCCGTGCCCTGGCCCACCCTCGTGACCACCTTCGGCTACGGCCTGCAATGCTTCGCCCGCTACCCCGACCACATGAAGCTGCACGACTTCTTCAAGTCCGCCATGCCCGAAGGCTACGTCCAGGAGCGCACCATCTTCTTCAAGGACGACGGCAACTACAAGACCCGCGCCGAGGTGAAGTTCGAGGGCGACACCCTGGTGAACCGCATCGAGCTGAAGGGCATCGACTTCAAGGAGGACGGCAACATCCTGGGGCACAAGCTGGAGTACAACTACAACAGCCACAACGTCTATATCATGGCCGACAAGCAGAAGAACGGCATCAAGGTGAACTTCAAGATCCGCCACAACATCGAGGACGGCAGCGTGCAGCTCGCCGACCACTACCAGCAGAACACCCCAATCGGCGACGGCCCCGTGCTGCTGCCCGACAACCACTACCTTAGCTACCAGTCCGCCCTGAGCAAAGACCCCAACGAGAAGCGCGATCACATGGTCCTGCTGGAGTTCGTGACCGCCGCCGGGATCACTCTCGGCATGGACGAGCTGTACAAGTAACTCGGTACCAAATTCCAGAAAAGAGGCCTCCCGAAAGGGGGGCCTTTTTTCGTTTTGGTCC</sbol:elements>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/PAmtR_sequence/1">
+    <sbol:elements>CTTGTCCAACCAAATGATTCGTTACCAATTGACAGTTTCTATCGATCTATAGATAATGCTAGC</sbol:elements>
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PAmtR_sequence"/>
+    <sbol:displayId>PAmtR_sequence</sbol:displayId>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/PTet/1">
+    <sbol:version>1</sbol:version>
+    <sbol:displayId>PTet</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PTet"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/PTet_sequence/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/A1_sequence/1">
+    <sbol:elements>AATGTTCCCTAATAATCAGCAAAGAGGTTACTAG</sbol:elements>
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/A1_sequence"/>
+    <sbol:displayId>A1_sequence</sbol:displayId>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/PHlYllR_sequence/1">
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:version>1</sbol:version>
+    <sbol:elements>ACCAGGAATCTGAACGATTCGTTACCAATTGACATATTTAAAATTCTTGTTTAAAatgctagc</sbol:elements>
+    <sbol:displayId>PHlYllR_sequence</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PHlYllR_sequence"/>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/PTac/1">
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/PTac_sequence/1"/>
+    <sbol:version>1</sbol:version>
+    <sbol:displayId>PTac</sbol:displayId>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PTac"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/PTac_sequence/1">
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PTac_sequence"/>
+    <sbol:elements>AACGATCGTTGGCTGTGTTGACAATTAATCATCGGCTCGTATAATGTGTGGAATTGTGAGCGCTCACAATT</sbol:elements>
+    <sbol:displayId>PTac_sequence</sbol:displayId>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/HlYllR/1">
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/HlYllR_sequence/1"/>
+    <sbol:version>1</sbol:version>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:displayId>HlYllR</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/HlYllR"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/PHlYllR/1">
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/PHlYllR_sequence/1"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PHlYllR"/>
+    <sbol:displayId>PHlYllR</sbol:displayId>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/B1/1">
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/B1"/>
+    <sbol:version>1</sbol:version>
+    <sbol:displayId>B1</sbol:displayId>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/B1_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/AmtR_sequence/1">
+    <sbol:displayId>AmtR_sequence</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/AmtR_sequence"/>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:elements>ATGGCAGGCGCAGTTGGTCGTCCGCGTCGTAGTGCACCGCGTCGTGCAGGTAAAAATCCGCGTGAAGAAATTCTGGATGCAAGCGCAGAACTGTTTACCCGTCAGGGTTTTGCAACCACCAGTACCCATCAGATTGCAGATGCAGTTGGTATTCGTCAGGCAAGCCTGTATTATCATTTTCCGAGCAAAACCGAAATCTTTCTGACCCTGCTGAAAAGCACCGTTGAACCGAGCACCGTTCTGGCAGAAGATCTGAGCACCCTGGATGCAGGTCCGGAAATGCGTCTGTGGGCAATTGTTGCAAGCGAAGTTCGTCTGCTGCTGAGCACCAAATGGAATGTTGGTCGTCTGTATCAGCTGCCGATTGTTGGTAGCGAAGAATTTGCAGAATATCATAGCCAGCGTGAAGCACTGACCAATGTTTTTCGTGATCTGGCAACCGAAATTGTTGGTGATGATCCGCGTGCAGAACTGCCGTTTCATATTACCATGAGCGTTATTGAAATGCGTCGCAATGATGGTAAAATTCCGAGTCCGCTGAGCGCAGATAGCCTGCCGGAAACCGCAATTATGCTGGCAGATGCAAGCCTGGCAGTTCTGGGTGCACCGCTGCCTGCAGATCGTGTTGAAAAAACCCTGGAACTGATTAAACAGGCAGATGCAAAATAA</sbol:elements>
+    <sbol:version>1</sbol:version>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/BM3R1/1">
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/BM3R1_sequence/1"/>
+    <sbol:displayId>BM3R1</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/BM3R1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/PBM3R1_sequence/1">
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PBM3R1_sequence"/>
+    <sbol:displayId>PBM3R1_sequence</sbol:displayId>
+    <sbol:elements>AATCCGCGTGATAGGTCTGATTCGTTACCAATTGACGGAATGAACGTTCATTCCGATAATGCTAGC</sbol:elements>
+    <sbol:version>1</sbol:version>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/PBM3R1/1">
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PBM3R1"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/PBM3R1_sequence/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:displayId>PBM3R1</sbol:displayId>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/ECK120033737__4/1">
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737_sequence/1"/>
+    <sbol:displayId>ECK120033737__4</sbol:displayId>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__4"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/YFP/1">
+    <sbol:version>1</sbol:version>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/YFP"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/YFP_sequence/1"/>
+    <sbol:displayId>YFP</sbol:displayId>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/PTet_sequence/1">
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PTet_sequence"/>
+    <sbol:elements>TACTCCACCGTTGGCTTTTTTCCCTATCAGTGATAGAGATTGACATCCCTATCAGTGATAGAGATAATGAGCAC</sbol:elements>
+    <sbol:version>1</sbol:version>
+    <sbol:displayId>PTet_sequence</sbol:displayId>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/ECK120033737__1/1">
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737__1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:displayId>ECK120033737__1</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737_sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/H1/1">
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:displayId>H1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/H1"/>
+    <sbol:version>1</sbol:version>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/H1_sequence/1"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/ECK120033737/1">
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/ECK120033737_sequence/1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:displayId>ECK120033737</sbol:displayId>
+    <sbol:version>1</sbol:version>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/A1/1">
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:version>1</sbol:version>
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/A1_sequence/1"/>
+    <sbol:displayId>A1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/A1"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://sbols.org/Output_Circuit2/HlYllR_sequence/1">
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/HlYllR_sequence"/>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+    <sbol:elements>ATGAAATACATCCTGTTTGAGGTGTGCGAAATGGGTAAAAGCCGTGAACAGACCATGGAAAATATTCTGAAAGCAGCCAAAAAGAAATTCGGCGAACGTGGTTATGAAGGCACCAGCATTCAAGAAATTACCAAAGAAGCCAAAGTTAACGTTGCAATGGCCAGCTATTACTTTAATGGCAAAGAGAACCTGTACTACGAGGTGTTCAAAAAATACGGTCTGGCAAATGAACTGCCGAACTTTCTGGAAAAAAACCAGTTTAATCCGATTAATGCCCTGCGTGAATATCTGACCGTTTTTACCACCCACATTAAAGAAAATCCGGAAATTGGCACCCTGGCCTATGAAGAAATTATCAAAGAAAGCGCACGCCTGGAAAAAATCAAACCGTATTTTATCGGCAGCTTCGAACAGCTGAAAGAAATTCTGCAAGAGGGTGAAAAACAGGGTGTGTTTCACTTTTTTAGCATCAACCATACCATCCATTGGATTACCAGCATTGTTCTGTTTCCGAAATTCAAAAAATTCATCGATAGCCTGGGTCCGAATGAAACCAATGATACCAATCATGAATGGATGCCGGAAGATCTGGTTAGCCGTATTATTAGCGCACTGACCGATAAACCGAACATTTAA</sbol:elements>
+    <sbol:version>1</sbol:version>
+    <sbol:displayId>HlYllR_sequence</sbol:displayId>
+  </sbol:Sequence>
+  <sbol:ComponentDefinition rdf:about="http://sbols.org/Output_Circuit2/PAmtR/1">
+    <sbol:sequence rdf:resource="http://sbols.org/Output_Circuit2/PAmtR_sequence/1"/>
+    <sbol:version>1</sbol:version>
+    <sbol:displayId>PAmtR</sbol:displayId>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/PAmtR"/>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+  </sbol:ComponentDefinition>
+  <sbol:ModuleDefinition rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/1">
+    <sbol:displayId>Output_Circuit_3</sbol:displayId>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR/1">
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/HlYllR/1"/>
+        <sbol:displayId>HlYllR</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:version>1</sbol:version>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_Protein/1">
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/YFP_Protein/1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_Protein"/>
+        <sbol:displayId>YFP_Protein</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR_represses_PAmtR/1">
+        <sbol:displayId>AmtR_represses_PAmtR</sbol:displayId>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR_represses_PAmtR/PAmtR/1">
+            <sbol:participant rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PAmtR/1"/>
+            <sbol:version>1</sbol:version>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR_represses_PAmtR/PAmtR"/>
+            <sbol:displayId>PAmtR</sbol:displayId>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR_represses_PAmtR/AmtR/1">
+            <sbol:version>1</sbol:version>
+            <sbol:participant rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR/1"/>
+            <sbol:displayId>AmtR</sbol:displayId>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR_represses_PAmtR/AmtR"/>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:version>1</sbol:version>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR_represses_PAmtR"/>
+      </sbol:Interaction>
+    </sbol:interaction>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1_represses_PBM3R1/1">
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1_represses_PBM3R1/PBM3R1/1">
+            <sbol:displayId>PBM3R1</sbol:displayId>
+            <sbol:participant rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PBM3R1/1"/>
+            <sbol:version>1</sbol:version>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1_represses_PBM3R1/PBM3R1"/>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1_represses_PBM3R1/BM3R1/1">
+            <sbol:displayId>BM3R1</sbol:displayId>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:version>1</sbol:version>
+            <sbol:participant rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1/1"/>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1_represses_PBM3R1/BM3R1"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1_represses_PBM3R1"/>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:displayId>BM3R1_represses_PBM3R1</sbol:displayId>
+        <sbol:version>1</sbol:version>
+      </sbol:Interaction>
+    </sbol:interaction>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/PBM3R1/1">
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PBM3R1/1"/>
+        <sbol:displayId>PBM3R1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PBM3R1"/>
+        <sbol:version>1</sbol:version>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR/1">
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR"/>
+        <sbol:displayId>AmtR</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/AmtR/1"/>
+        <sbol:version>1</sbol:version>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1/1">
+        <sbol:version>1</sbol:version>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:displayId>BM3R1</sbol:displayId>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/BM3R1/1"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_produces_YFP_Protein/1">
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_produces_YFP_Protein/YFP_Protein/1">
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_Protein/1"/>
+            <sbol:version>1</sbol:version>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_produces_YFP_Protein/YFP_Protein"/>
+            <sbol:displayId>YFP_Protein</sbol:displayId>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000589"/>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_produces_YFP_Protein"/>
+        <sbol:displayId>YFP_produces_YFP_Protein</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_produces_YFP_Protein/YFP/1">
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000645"/>
+            <sbol:participant rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP/1"/>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_produces_YFP_Protein/YFP"/>
+            <sbol:displayId>YFP</sbol:displayId>
+            <sbol:version>1</sbol:version>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+    <ns0:title>Output Circuit Module</ns0:title>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/YFP/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:displayId>YFP</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR_represses_PHlYllR/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR_represses_PHlYllR"/>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:version>1</sbol:version>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR_represses_PHlYllR/PHlYllR/1">
+            <sbol:version>1</sbol:version>
+            <sbol:participant rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PHlYllR/1"/>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000642"/>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR_represses_PHlYllR/PHlYllR"/>
+            <sbol:displayId>PHlYllR</sbol:displayId>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:displayId>HlYllR_represses_PHlYllR</sbol:displayId>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR_represses_PHlYllR/HlYllR/1">
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR_represses_PHlYllR/HlYllR"/>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR/1"/>
+            <sbol:version>1</sbol:version>
+            <sbol:displayId>HlYllR</sbol:displayId>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/1">
+        <ns0:title>Device</ns0:title>
+        <sbol:version>1</sbol:version>
+        <sbol:mapsTo>
+          <sbol:MapsTo rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/PAmtR_map/1">
+            <sbol:displayId>PAmtR_map</sbol:displayId>
+            <sbol:remote rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PAmtR_component/1"/>
+            <sbol:refinement rdf:resource="http://sbols.org/v2#useRemote"/>
+            <sbol:local rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PAmtR/1"/>
+            <sbol:version>1</sbol:version>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/PAmtR_map"/>
+          </sbol:MapsTo>
+        </sbol:mapsTo>
+        <sbol:displayId>Device</sbol:displayId>
+        <sbol:mapsTo>
+          <sbol:MapsTo rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/YFP_Protein_map/1">
+            <sbol:displayId>YFP_Protein_map</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:refinement rdf:resource="http://sbols.org/v2#useRemote"/>
+            <sbol:remote rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_Protein/1"/>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/YFP_Protein_map"/>
+            <sbol:local rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP_Protein/1"/>
+          </sbol:MapsTo>
+        </sbol:mapsTo>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/1"/>
+        <sbol:mapsTo>
+          <sbol:MapsTo rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/HlYllR_map/1">
+            <sbol:displayId>HlYllR_map</sbol:displayId>
+            <sbol:remote rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/HlYllR_component/1"/>
+            <sbol:local rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/HlYllR/1"/>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/HlYllR_map"/>
+            <sbol:version>1</sbol:version>
+            <sbol:refinement rdf:resource="http://sbols.org/v2#useRemote"/>
+          </sbol:MapsTo>
+        </sbol:mapsTo>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:mapsTo>
+          <sbol:MapsTo rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/AmtR_map/1">
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/AmtR_map"/>
+            <sbol:refinement rdf:resource="http://sbols.org/v2#useRemote"/>
+            <sbol:displayId>AmtR_map</sbol:displayId>
+            <sbol:local rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/AmtR/1"/>
+            <sbol:version>1</sbol:version>
+            <sbol:remote rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/AmtR_component/1"/>
+          </sbol:MapsTo>
+        </sbol:mapsTo>
+        <sbol:mapsTo>
+          <sbol:MapsTo rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/PHlYllR_map/1">
+            <sbol:version>1</sbol:version>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/PHlYllR_map"/>
+            <sbol:displayId>PHlYllR_map</sbol:displayId>
+            <sbol:local rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PHlYllR/1"/>
+            <sbol:refinement rdf:resource="http://sbols.org/v2#useRemote"/>
+            <sbol:remote rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PHlYllR_component/1"/>
+          </sbol:MapsTo>
+        </sbol:mapsTo>
+        <sbol:mapsTo>
+          <sbol:MapsTo rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/BM3R1_map/1">
+            <sbol:refinement rdf:resource="http://sbols.org/v2#useRemote"/>
+            <sbol:displayId>BM3R1_map</sbol:displayId>
+            <sbol:remote rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/BM3R1_component/1"/>
+            <sbol:local rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/BM3R1/1"/>
+            <sbol:version>1</sbol:version>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/BM3R1_map"/>
+          </sbol:MapsTo>
+        </sbol:mapsTo>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device"/>
+        <sbol:mapsTo>
+          <sbol:MapsTo rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/YFP_map/1">
+            <sbol:version>1</sbol:version>
+            <sbol:refinement rdf:resource="http://sbols.org/v2#useRemote"/>
+            <sbol:remote rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/YFP_component/1"/>
+            <sbol:local rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/YFP/1"/>
+            <sbol:displayId>YFP_map</sbol:displayId>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/YFP_map"/>
+          </sbol:MapsTo>
+        </sbol:mapsTo>
+        <sbol:mapsTo>
+          <sbol:MapsTo rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/PBM3R1_map/1">
+            <sbol:version>1</sbol:version>
+            <sbol:remote rdf:resource="http://sbols.org/Output_Circuit2/Output_Device_3/PBM3R1_component/1"/>
+            <sbol:displayId>PBM3R1_map</sbol:displayId>
+            <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/Device/PBM3R1_map"/>
+            <sbol:local rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PBM3R1/1"/>
+            <sbol:refinement rdf:resource="http://sbols.org/v2#useRemote"/>
+          </sbol:MapsTo>
+        </sbol:mapsTo>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3"/>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/PHlYllR/1">
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PHlYllR"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PHlYllR/1"/>
+        <sbol:displayId>PHlYllR</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://sbols.org/Output_Circuit2/Output_Circuit_3/PAmtR/1">
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+        <sbol:definition rdf:resource="http://sbols.org/Output_Circuit2/PAmtR/1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:version>1</sbol:version>
+        <sbol:displayId>PAmtR</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sbols.org/Output_Circuit2/Output_Circuit_3/PAmtR"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+  </sbol:ModuleDefinition>
+</rdf:RDF>
