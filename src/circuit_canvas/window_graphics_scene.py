@@ -7,11 +7,11 @@ from PyQt5.QtGui import *
 class MyGraphicsScene(QGraphicsScene):
     def __init__(self, scene, parent=None):
         super().__init__(parent)
-        
+
         self.scene = scene
         self.setBackgroundBrush(QColor(200, 200, 200))
 
-    
+
     def save(self, filename):
         '''
         To capture the entire circuit and save it at {filename}.
@@ -22,7 +22,7 @@ class MyGraphicsScene(QGraphicsScene):
         self._master_rect.adjust(-20, -20, 20, 20)
         width = int(self._master_rect.width())
         height = int(self._master_rect.height())
-        
+
         image = QImage(width, height, QImage.Format_ARGB32_Premultiplied)
         painter = QPainter(image)
 
@@ -32,7 +32,7 @@ class MyGraphicsScene(QGraphicsScene):
 
         # Save the image to the speficied filename.
         image.save(filename)
-    
+
     def setGrScene(self, width, height):
         self.setSceneRect(-width // 2, -height // 2, width, height)
 
@@ -43,4 +43,3 @@ class MyGraphicsScene(QGraphicsScene):
 
     def drawBackground(self, painter, rect):
         super().drawBackground(painter, rect)
-    

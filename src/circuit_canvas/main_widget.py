@@ -7,6 +7,7 @@ from circuit_parts import CircuitPart
 from window_graphics_scene import MyGraphicsScene
 from circuit_scene import CircuitScene
 from part_widget import PartWidget
+from part_graphics import GraphicsPart
 from part_connector import *
 from edges import *
 
@@ -219,6 +220,21 @@ class QDMGraphicsView(QGraphicsView):
             self.dragEdge.grEdge.setDestination(pos.x(), pos.y())
             self.dragEdge.grEdge.update()
     '''
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_Delete:
+            self.delete_item()
+        else:
+            super().keyPressEvent(event)
+
+
+    def delete_item(self):
+        for item in self.grScene.selectedItems():
+            if isinstance(item, QDMGraphicsEdge):
+                item.edge.remove()
+            elif isinstance(item, GraphicsPart):
+                 item.part.remove()
+
+
     def mousePressEvent(self, event):
         if event.button() == Qt.MiddleButton:
             self.middleMouseButtonPress(event)

@@ -3,7 +3,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from part_connector import *
 
-DEBUG = False        
+DEBUG = False
 
 class QDMGraphicsEdge(QGraphicsPathItem):
     def __init__(self, edge, parent=None):
@@ -43,9 +43,9 @@ class QDMGraphicsEdgeBezier(QDMGraphicsEdge):
         d = self.posDestination
         dist = (d[0] - s[0]) * 0.5
         cpx_s, cpx_d = dist, -dist
-        cpy_s, cpy_d = 0, 0 
+        cpy_s, cpy_d = 0, 0
         is_left = self.edge.start_connector.is_left
-        
+
         if (s[0] > d[0] and not is_left) \
             or (s[0] > d[0] and is_left):
             cpx_d *= -1
@@ -61,30 +61,30 @@ class Edge:
 
         self.start_connector = start_connector
         self.end_connector = end_connector
-        
+
         self.start_connector.edge = self
         if self.end_connector is not None:
             self.end_connector.edge = self
 
-        
+
         self.grEdge = QDMGraphicsEdgeBezier(self)
 
         self.updatePositions()
         if DEBUG: print("Edge: ", self.grEdge.posSource, "to", self.grEdge.posDestination)
         self.scene.grScene.addItem(self.grEdge)
         self.scene.addEdge(self)
-        
-        
+
+
     def updatePositions(self):
         source_pos = self.start_connector.getConnectorPosition()
-        
+
         source_pos[0] += self.start_connector.part.grNode.pos().x()
         source_pos[1] += self.start_connector.part.grNode.pos().y()
         self.grEdge.setSource(*source_pos)
         if self.end_connector is not None:
             end_pos = self.end_connector.getConnectorPosition()
             end_pos[0] += self.end_connector.part.grNode.pos().x()
-            end_pos[1] += self.end_connector.part.grNode.pos().y() 
+            end_pos[1] += self.end_connector.part.grNode.pos().y()
             self.grEdge.setDestination(*end_pos)
         else:
             self.grEdge.setDestination(*source_pos)
@@ -106,4 +106,8 @@ class Edge:
         self.remove_from_sockets()
         self.scene.grScene.removeItem(self.grEdge)
         self.grEdge = None
-        self.scene.removeEdge(self)
+        try:
+            self.scene.removeEdge(self)
+        except ValueError:
+            pass
+

@@ -96,6 +96,14 @@ class CircuitPart():
                 connector.edge.updatePositions()
 
 
+    def remove(self):
+        for connector in (self.inputs + self.outputs):
+            if connector.hasEdge():
+                connector.edge.remove()
+        self.scene.grScene.removeItem(self.grNode)
+        self.grNode = None
+        self.scene.removeNode(self)
+
 
 """
 c+a'b' = a'bc + a'b'c + ab'c + a'b'c
