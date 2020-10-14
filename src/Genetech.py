@@ -2,7 +2,6 @@ import os
 import sys
 import time
 from PIL import Image
-#import Gateway as g
 import SBOL_File as sbol
 import Logical_Representation as logic
 import SBOL_visual as visual
@@ -16,9 +15,10 @@ from functions import *
 from time import sleep
 import random
 from main import process
-
+import sys
+sys.path.append("circuit_canvas/")
+from main_window import CircuitBuilder
 font = QFont("Times", 11)
-
 
 # The main class which operates the entire widnow
 class MainPage(QtWidgets.QMainWindow):
@@ -37,23 +37,25 @@ class MainPage(QtWidgets.QMainWindow):
         loadUi('Genetech.ui', self)
 
         #Setting the logos for the window
-        self.setWindowIcon(QtGui.QIcon('SmallLogo.png'))
+        self.setWindowIcon(QtGui.QIcon(os.getcwd()+'/icons/SmallLogo.png'))
         self.setWindowTitle("GeneTech - v2.0")
-        pixmap = QPixmap('BigLogo.png')
+        pixmap = QPixmap(os.getcwd()+'/icons/BigLogo.png')
         self.MainLogo.setPixmap(pixmap)
-        
-        #Intial Label in the status bar
+
+        #Initial Label in the status bar
         self.statusBar().showMessage('Ready')
 
         # Button Entries which have been coded and these are called when button are clicked
         self.SaveButton.clicked.connect(self.SaveLabel)
+        self.DrawButton.clicked.connect(self.DrawWindow)
+
         self.ViewButton.clicked.connect(self.viewCircuit)
         self.ImportNotesButton.clicked.connect(self.FileOpenDialog)
         self.SaveNotesButton.clicked.connect(self.SaveNotes)
         self.EnterButton.clicked.connect(self.EnterExp)
-        self.ExitButton.clicked.connect(self.ResetAll)    
+        self.ExitButton.clicked.connect(self.ResetAll)
 
-        self.CircuitList.doubleClicked.connect(self.saveImageDialog)        
+        self.CircuitList.doubleClicked.connect(self.saveImageDialog)
         self.xmlList.clicked.connect(self.ReadXMLFile)
         self.bexppp = self.InsertExpressionEdit.text()
         self.LabelforList = QLabel(self.tab)
@@ -69,12 +71,96 @@ class MainPage(QtWidgets.QMainWindow):
         self.ExitButton.setShortcut("Ctrl+R")
 
         # Messages on the status bar when mouse is hovered on different windows parts
-        self.actionAbout.setStatusTip("Know more about GeneTech by clicking this button")  
+        self.actionAbout.setStatusTip("Know more about GeneTech by clicking this button")
         self.actionExit.setStatusTip("Reset")
         self.EnterButton.setStatusTip("Press the button for result")
         self.ExitButton.setStatusTip("Exit the window")
         self.InsertExpressionEdit.setStatusTip("Insert a Boolean expression here")
-    
+
+    #This function is to open the drawing canvas
+    def DrawWindow(self):
+        self.circuit_builder = CircuitBuilder(self)
+        self.circuit_builder.show()
+        self.hide()
+
+    #Takes the boolean expression of the circuit drawn in the circuit canvas, processes it as before
+    #and after performing all relevant functions lists the output circuits and SBOL files
+    def processDrawEquation(self, bexp):
+        if self.DelayRadioButton.isChecked():
+            option = 0
+        elif self.GatesRadioButton.isChecked():
+            option = 1
+        a=0
+        self.InsertExpressionEdit.setText(bexp)
+        self.ProgressBar.setVisible(True)
+        self.ProgressBar.setValue(0)
+        self.result.append("a")
+
+        process(bexp)
+        DisplayData()
+        DisplayCircuits()
+        self.ProgressBar.setValue(25)
+        sleep(1)
+        number = random.randint(30,70)
+        self.ProgressBar.setValue(number)
+        sbol.SBOL_File(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()) #create SBOl files
+        number = random.randint(75,90)
+        self.ProgressBar.setValue(number)
+        sleep(0.1)
+        logic.Logical_Representation(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()) #Create Logical Representation images
+        visual.SBOLv(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value())   #create SBOL visual Representation images
+        self.ProgressBar.setValue(100)
+
+        bexp = Convert(bexp)
+        bexp = "".join(bexp.split())
+        #bexp = bexp.strip() #Remove spaces in the expression
+        finalexp=[]
+        exp = bexp.split("+") #change the notations
+        for i in range(len(exp)):
+            term = exp[i].split(".")
+            finalterm=[]
+            for j in range(len(term)):
+                if term[j][-1]=="'":
+                    finalterm.append("not(" + term[j][:-1] + ")")
+                else:
+                    finalterm.append(term[j])
+            finalexp.append("("+" and ".join(finalterm)+")")
+        bexp = " or ".join(finalexp)
+        code = compile(bexp, '', 'eval') #evaluation of expression
+        TruthTable_Input = code.co_names # Generates the number of inputs in an expression. In a.b there are 2 inputs 'a' and 'b'
+        for values1 in product(range(2), repeat=len(TruthTable_Input)): # generate the values of entrid
+            header_count=2**(len(values1))
+            List_TruthTable_Input = [[] for i in range(1, header_count+1)]
+        self.TruthList.clear()
+        for BexpIndex in range(len(TruthTable_Input)): #make the list for TruthTable_Input to show on main window
+            self.ttList.append(TruthTable_Input[BexpIndex])
+            self.ttList.append("   ")
+        self.ttList.append(":   ")
+        self.ttList.append(bexp)
+        s = [str(i) for i in self.ttList]
+        res = " ".join(s)
+        self.TruthList.addItem(res)
+        self.ttList.clear()
+        for values in product(range(2), repeat=len(TruthTable_Input)):# put inputs of espression together
+            for w in range(len(values)):
+                List_TruthTable_Input[a].append(str(values[w]))
+            a+=1
+            env = dict(zip(TruthTable_Input, values)) #put the TruthTable_Input and values togather
+            pk = int(eval(code, env)) #generate the output of truthtable
+
+            for v in values: #append the list to show on main window
+               self.ttList.append(v)
+               self.ttList.append("     ")
+            self.ttList.append(":       ")
+            self.ttList.append(pk)
+            s = [str(i) for i in self.ttList]
+            res = " ".join(s)
+            self.TruthList.addItem(res)
+            self.ttList.clear()
+        if len(self.result) > 0: #Call these functions only if there is an expression
+            self.CreateCircuitList()
+            self.CreateXMLList()
+            self.result.clear()
 
     # This funtion reads the txt which of circuits and returns a list
     #with the number of generated circuits by the inserted boolean expression
@@ -91,13 +177,13 @@ class MainPage(QtWidgets.QMainWindow):
             for j in i:
                 if j == '':
                     i.remove(j)
-        return circuits 
+        return circuits
 
 
     def viewCircuit(self):
         if self.CircuitList.currentItem():
             img = Image.open('user_files/'+str(self.CircuitList.currentItem().text())+".png")
-            print('user_files/'+str(self.CircuitList.currentItem().text())+".png")
+            #print('user_files/'+str(self.CircuitList.currentItem().text())+".png")
             img.show()
 
 
@@ -120,24 +206,24 @@ class MainPage(QtWidgets.QMainWindow):
             for CircuitIndex in range(CountFiles()):
                 self.CircuitList.addItem("Circuit "+str(CircuitIndex+1)+" Logic")
                 self.CircuitList.addItem("Circuit "+str(CircuitIndex+1)+" SBOL Visual")
-                self.checkList.append("Check")            
+                self.checkList.append("Check")
         else:
             for CircuitIndex in range(CountFiles()):
                 self.CircuitList.addItem("Circuit "+str(CircuitIndex+1)+" Logic")
                 self.CircuitList.addItem("Circuit "+str(CircuitIndex+1)+" SBOL Visual")
-                self.checkList.append("Check")         
- 
+                self.checkList.append("Check")
+
     #Code for importing a file in Notes
     def FileOpenDialog(self):
             options = QFileDialog.Options()
             options |= QFileDialog.DontUseNativeDialog
-   
+
             UserfileName, _ = QFileDialog.getOpenFileName(self,"Import File to Notes", "","All Files (*);;TxtFiles (*.txt)", options=options)
             if UserfileName:
                 f = open(UserfileName,"r")
                 data = f.read()
                 self.Notes.setText(data)
-                
+
 
     # When the ciruits are developed using the boolean expression
     #This function creates the list of XML files of the
@@ -153,7 +239,7 @@ class MainPage(QtWidgets.QMainWindow):
             self.checkxmlList.clear()
             for CircuitIndex in range(CountFiles()):
                 self.xmlList.addItem("SBOL File "+str(CircuitIndex+1))
-                self.checkxmlList.append("Check")            
+                self.checkxmlList.append("Check")
         else:
             for CircuitIndex in range(CountFiles()):
                 self.xmlList.addItem("SBOL File "+str(CircuitIndex+1))
@@ -201,7 +287,7 @@ class MainPage(QtWidgets.QMainWindow):
         InputFile, _ = QFileDialog.getSaveFileName(self,"Save Notes","","All Files (*);;Txt Files (*.txt)", options=options)
         Text = self.Notes.toPlainText()
         if InputFile:
-            f= open(InputFile+".xml","w+") 
+            f= open(InputFile+".xml","w+")
             f.write(Text)
 
 
@@ -289,7 +375,7 @@ class MainPage(QtWidgets.QMainWindow):
         if bexp == "":
             mBox1 = QMessageBox.about(self, "Alert", "Please insert the expression") # warning in case of empty expression
         elif not bexp:
-            bexp = 'a'  
+            bexp = 'a'
         else:
             bexp = bexp.replace(" ", "")
             self.ProgressBar.setVisible(True)
@@ -331,7 +417,7 @@ class MainPage(QtWidgets.QMainWindow):
             bexp = " or ".join(finalexp)
             code = compile(bexp, '', 'eval') #evaluation of expression
             TruthTable_Input = code.co_names # Generates the number of inputs in an expression. In a.b there are 2 inputs 'a' and 'b'
-            for values1 in product(range(2), repeat=len(TruthTable_Input)): # generate the values of entrid 
+            for values1 in product(range(2), repeat=len(TruthTable_Input)): # generate the values of entrid
                 header_count=2**(len(values1))
                 List_TruthTable_Input = [[] for i in range(1, header_count+1)]
             self.TruthList.clear()
@@ -358,15 +444,15 @@ class MainPage(QtWidgets.QMainWindow):
                 self.ttList.append(pk)
                 s = [str(i) for i in self.ttList]
                 res = " ".join(s)
-                self.TruthList.addItem(res) 
+                self.TruthList.addItem(res)
                 self.ttList.clear()
-        if len(self.result) > 0: #Call these functions only if there is an expression 
+        if len(self.result) > 0: #Call these functions only if there is an expression
             self.CreateCircuitList()
             self.CreateXMLList()
             self.result.clear()
-        
-            
-            
+
+
+
 
 if __name__ == "__main__":
     app = QCoreApplication.instance()               # Fixes error with kernel crashing on second run of application
