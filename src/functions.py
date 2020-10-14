@@ -23,10 +23,9 @@ def baseList():
 
 def DeleteExistingImages():
     """Delete all the existing Images in the directory"""
-    list = glob.glob('**/*.png', recursive=True)
-    for i in range(len(list)):
-        if list[i] != 'BigLogo.png' and list[i] != 'SmallLogo.png':
-            os.remove(list[i])
+    list_imgs = glob.glob('./user_files/*.png', recursive=True)
+    for i in range(len(list_imgs)):
+        os.remove(list_imgs[i])
 
 def DeleteExistingFiles():
     """Delete all the existing SBOL files in the directory"""
@@ -90,13 +89,13 @@ def Delay(promotor1, CDS, promotor2 = None):
         else:
             return Check_NOR(promotor1, promotor2, Output_P, Gates[4])
     return 0
-	
+
 def Check_NOT(promotor, Output_P, Gates):
     """Check the whole list and returns the delay of the gate matching with inputs"""
     for i in Gates:
         if i[0] == promotor and i[1] == Output_P:
             return i[2]
-    return 0 
+    return 0
 
 def Check_NOR(promotor1, promotor2, Output_P, Gates):
     """Check the whole list and returns the delay of the gate matching with inputs"""
@@ -107,7 +106,7 @@ def Check_NOR(promotor1, promotor2, Output_P, Gates):
         elif i[0] == promotor2 and i[1] == promotor1 and i[2] == Output_P:          #e.g. if P1=PBetl and P2=PAmtR
             return i[3]
     return 0
-	
+
 def GatherGates():
     f = open("GatesLib.txt")
     lst = []
