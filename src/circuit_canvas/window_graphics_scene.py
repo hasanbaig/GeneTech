@@ -6,9 +6,16 @@ from PyQt5.QtGui import *
 
 class MyGraphicsScene(QGraphicsScene):
     def __init__(self, scene, parent=None):
+        '''
+        This class extends the QGraphicsScene class in PyQT5 and
+        is responsible for all the graphics related
+        aspects of the entire scene, that is the canvas.
+        This here deals primarily with the background.
+        more on the class here: https://doc.qt.io/qt-5/qgraphicsscene.html
+        '''
         super().__init__(parent)
-
         self.scene = scene
+        #the background grid color can be changed here
         self.setBackgroundBrush(QColor(200, 200, 200))
 
 
@@ -34,12 +41,16 @@ class MyGraphicsScene(QGraphicsScene):
         image.save(filename)
 
     def setGrScene(self, width, height):
+        '''
+        Sets the scene width and height, this is basically the height
+        and width of the canvas that we see on screen.
+        '''
         self.setSceneRect(-width // 2, -height // 2, width, height)
 
     # the drag events won't be allowed until dragMoveEvent is overriden
     def dragMoveEvent(self, event):
         pass
 
-
+    # draws the background of the graphics scene
     def drawBackground(self, painter, rect):
         super().drawBackground(painter, rect)

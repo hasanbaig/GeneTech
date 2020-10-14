@@ -18,9 +18,7 @@ from main import process
 import sys
 sys.path.append("circuit_canvas/")
 from main_window import CircuitBuilder
-
 font = QFont("Times", 11)
-
 
 # The main class which operates the entire widnow
 class MainPage(QtWidgets.QMainWindow):
@@ -85,6 +83,8 @@ class MainPage(QtWidgets.QMainWindow):
         self.circuit_builder.show()
         self.hide()
 
+    #Takes the boolean expression of the circuit drawn in the circuit canvas, processes it as before
+    #and after performing all relevant functions lists the output circuits and SBOL files
     def processDrawEquation(self, bexp):
         if self.DelayRadioButton.isChecked():
             option = 0
@@ -103,7 +103,6 @@ class MainPage(QtWidgets.QMainWindow):
         sleep(1)
         number = random.randint(30,70)
         self.ProgressBar.setValue(number)
-        #print("{0}, {1}, {2}, {3}".format(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()))
         sbol.SBOL_File(self.spinBox.value(), self.doubleSpinBox.value(), option, self.CircuitSpinBox.value()) #create SBOl files
         number = random.randint(75,90)
         self.ProgressBar.setValue(number)
@@ -184,7 +183,7 @@ class MainPage(QtWidgets.QMainWindow):
     def viewCircuit(self):
         if self.CircuitList.currentItem():
             img = Image.open('user_files/'+str(self.CircuitList.currentItem().text())+".png")
-            print('user_files/'+str(self.CircuitList.currentItem().text())+".png")
+            #print('user_files/'+str(self.CircuitList.currentItem().text())+".png")
             img.show()
 
 
