@@ -13,7 +13,7 @@ class CircuitBuilder(QMainWindow):
         '''
         This is the main circuit builder class; this initilaizes
         the canvas we see on screen.
-        main_window: Main GeneTech window from which the circuit buidler is called
+        main_window: Main GeneTech window from which the circuit builder is called
         '''
         super().__init__()
         self.main_window = main_window
@@ -64,9 +64,9 @@ class CircuitBuilder(QMainWindow):
 
     def closeEvent(self, event):
         '''
-        Closes the window, and shows the main genetech window
-        also writes the position and size of the window so the
-        same is loaded next time.
+        This function is an event responsible for closing the window, and
+        showing the main GeneTech window. It also writes the position and
+        size of the window so the same is loaded next time.
         '''
         self.mdiArea.closeAllSubWindows()
         if self.mdiArea.currentSubWindow():

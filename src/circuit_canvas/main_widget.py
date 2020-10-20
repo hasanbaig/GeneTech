@@ -27,7 +27,7 @@ class MainScreenWidget(QWidget):
 
     def initUI(self):
         '''
-        Helpder function to set the scene and settings of the canvas
+        Helper function to set the scene and settings of the canvas
         '''
         self.layout = QVBoxLayout()
         self.layout.setContentsMargins(0, 0, 0, 0)
@@ -238,6 +238,11 @@ class MyGraphicsView(QGraphicsView):
                  item.part.remove()
 
     def mousePressEvent(self, event):
+        '''
+        Overridden function of the same name from the QGraphicsView
+        class, this are responsible for various types of mouse events
+        and calls them appropriately
+        '''
         if event.button() == Qt.MiddleButton:
             self.middleMouseButtonPress(event)
         elif event.button() == Qt.LeftButton:
@@ -264,7 +269,7 @@ class MyGraphicsView(QGraphicsView):
         releaseEvent = QMouseEvent(QEvent.MouseButtonRelease, event.localPos(), event.screenPos(),
                                    Qt.LeftButton, Qt.NoButton, event.modifiers())
         super().mouseReleaseEvent(releaseEvent)
-        self.setDragCURRENT_MODE_(QGraphicsView.ScrollHandDrag)
+        self.setDragMode(QGraphicsView.ScrollHandDrag)
         fakeEvent = QMouseEvent(event.type(), event.localPos(), event.screenPos(),
                                 Qt.LeftButton, event.buttons() | Qt.LeftButton, event.modifiers())
         super().mousePressEvent(fakeEvent)
@@ -273,7 +278,7 @@ class MyGraphicsView(QGraphicsView):
         fakeEvent = QMouseEvent(event.type(), event.localPos(), event.screenPos(),
                                 Qt.LeftButton, event.buttons() & ~Qt.LeftButton, event.modifiers())
         super().mouseReleaseEvent(fakeEvent)
-        self.setDragCURRENT_MODE_(QGraphicsView.NoDrag)
+        self.setDragMode(QGraphicsView.NoDrag)
 
 
     def leftMouseButtonPress(self, event):

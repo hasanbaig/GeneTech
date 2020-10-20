@@ -52,38 +52,21 @@ class MyGraphicsEdge(QGraphicsPathItem):
         It draws a bezier curve.
         More here: https://doc.qt.io/qtforpython/PySide2/QtGui/QPainterPath.html
         '''
-        s = self.posSource
-        d = self.posDestination
-        dist = (d[0] - s[0]) * 0.5
-        cpx_s, cpx_d = dist, -dist
-        cpy_s, cpy_d = 0, 0
-        is_left = self.edge.start_connector.is_left
+        # s = self.posSource
+        # d = self.posDestination
+        # dist = (d[0] - s[0]) * 0.5
+        # cpx_s, cpx_d = dist, -dist
+        # cpy_s, cpy_d = 0, 0
+        # is_left = self.edge.start_connector.is_left
 
-        if (s[0] > d[0] and not is_left) \
-            or (s[0] > d[0] and is_left):
-            cpx_d *= -1
-            cpx_s *= -1
+        # if (s[0] > d[0] and not is_left) \
+        #     or (s[0] > d[0] and is_left):
+        #     cpx_d *= -1
+        #     cpx_s *= -1
         path = QPainterPath(QPointF(self.posSource[0], self.posSource[1]))
-        path.cubicTo( s[0] + cpx_s, s[1] + cpy_s, d[0] + cpx_d, d[1] + cpy_d, self.posDestination[0], self.posDestination[1])
+        # path.cubicTo( s[0] + cpx_s, s[1] + cpy_s, d[0] + cpx_d, d[1] + cpy_d, self.posDestination[0], self.posDestination[1])
+        path.lineTo(self.posDestination[0], self.posDestination[1])
         self.setPath(path)
-
-
-# class MyGraphicsEdgeBezier(MyGraphicsEdge):
-#     def updatePath(self):
-#         s = self.posSource
-#         d = self.posDestination
-#         dist = (d[0] - s[0]) * 0.5
-#         cpx_s, cpx_d = dist, -dist
-#         cpy_s, cpy_d = 0, 0
-#         is_left = self.edge.start_connector.is_left
-
-#         if (s[0] > d[0] and not is_left) \
-#             or (s[0] > d[0] and is_left):
-#             cpx_d *= -1
-#             cpx_s *= -1
-#         path = QPainterPath(QPointF(self.posSource[0], self.posSource[1]))
-#         path.cubicTo( s[0] + cpx_s, s[1] + cpy_s, d[0] + cpx_d, d[1] + cpy_d, self.posDestination[0], self.posDestination[1])
-#         self.setPath(path)
 
 
 class Edge:
