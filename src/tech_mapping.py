@@ -538,7 +538,7 @@ class TechMapper:
 									list_nor_gates.append(interim_list[search_idx])
 									interim_list.remove(search_idx)
 								except:
-									pass
+									print("BROKEN")
 									#break searchNorGates
 
 		elif nor_gate_type[0] == "Ext" and nor_gate_type[1] == "Ext":
