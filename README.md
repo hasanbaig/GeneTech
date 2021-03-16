@@ -25,13 +25,13 @@ Once installed, run the Genetech.py as follows:
 
 
 ### Current Contributors
-1. Mudasir Hanif
-2. Hasan Baig
+1. Hasan Baig
 
 ### Past Contributors
 1. Hasan Baig
 2. Jan Madsen
-3. Muhammad Ali Bhutto
-4. Mukesh Kumar
-5. Abdullah Siddiqui
-6. Adil Ali Khan
+3. Mudasir Hanif
+4. Muhammad Ali Bhutto
+5. Mukesh Kumar
+6. Abdullah Siddiqui
+7. Adil Ali Khan
