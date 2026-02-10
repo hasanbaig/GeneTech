@@ -22,7 +22,7 @@ distlib==0.3.9
 dnaplotlib==1.0
 dulwich==0.22.8
 fastjsonschema==2.21.1
-filelock==3.18.0
+filelock==3.20.3
 findpython==0.6.3
 fonttools==4.61.1
 frozenlist==1.5.0
