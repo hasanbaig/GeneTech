@@ -113,7 +113,7 @@ typer==0.15.2
 typing_extensions==4.12.2
 urllib3==2.3.0
 uvicorn==0.34.0
-virtualenv==20.31.2
+virtualenv==20.36.1
 wrapt==2.1.1
 xattr==1.1.4
 xxhash==3.5.0
