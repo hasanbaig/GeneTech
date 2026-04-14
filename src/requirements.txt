@@ -87,7 +87,7 @@ pyproject_hooks==1.2.0
 PyQt5==5.15.10
 PyQt5-Qt5==5.15.18
 PyQt5_sip==12.18.0
-pytest==8.4.0
+pytest==9.0.3
 pytest-cov==6.2.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
