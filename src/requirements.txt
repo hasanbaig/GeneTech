@@ -90,7 +90,7 @@ PyQt5_sip==12.18.0
 pytest==8.4.0
 pytest-cov==6.2.1
 python-dateutil==2.9.0.post0
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 PyYAML==6.0.2
 RapidFuzz==3.13.0
 rdflib==7.5.0
